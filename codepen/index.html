@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TITLE HERE</title>
+  <link rel="stylesheet" type="text/css" href="./style/indexStyle.css">
+  <script async src="./jsfile/indexJS.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+<body>
+ 
+  <script type="text/javascript">
+    d3.csv("./stocks.csv",
+          function(data){
+        console.log(data)
+    } );
+    </script>
+ 
+  <div class="header">
+    <div class="header"id="logo">logo</div>
+  </div>
+  <div class="bar" id="blockBar">
+    <table border="1">
+    <tr> 
+      <td><a href="#" target="_blank" title="Search">search</a></td>
+      <td><a href="#" target="_blank" title="News">News</a></td>
+      <td>
+        <a href="#" target="_blank" title="Stock Information">
+          Stock Information
+        </a>
+      </td>
+      <td><a href="#" target="_blank" title="About Us">About Us</a></td>
+    </tr>
+      </table>
+  </div>
+  <div class="search" id="blockSearch">
+    <div class="search" id="search"><a href="#" target="_blank"><img src="#" alt="Search"></a>
+        
+<svg height="500" width="500">
+  <circle cx="260" cy="160" r="140" stroke="pink" stroke-width="5" fill="lightblue" />
+  <circle cx="260" cy="160" r="20" stroke="yellow" stroke-width="3" fill="orange" />
+  <circle cx="260" cy="230" r="40" stroke="yellow" stroke-width="3" fill="pink" />
+  <rect x="150" y="100" width="50" height="50"
+  style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+  <rect x="320" y="100" width="50" height="50"
+  style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+  
+</svg></div>
+  </div>
+  <div  id="blockNews">
+    <div class="news" id="newsRow">
+      <div class="news" id="news1">
+        <img src="#" alt="news1">
+				<a href="#" target="_blank"><p>news title</p></a>
+      </div>
+      <div class="news" id="news2">
+        <img src="#" alt="news2">
+				<a href="#" target="_blank"><p>news title</p></a>
+      </div>
+      <div class="news" id="news3">
+        <img src="#" alt="news3">
+				<a href="#" target="_blank"><p>news title</p></a>
+      </div>
+      <div class="news" id="news4">
+        <img src="#" alt="news4">
+				<a href="#" target="_blank"><p>news title</p></a>
+      </div>
+    </div>
+  </div>
+  <div id="blockStock">
+    <div class="stockRow" id="row1">
+      <div class="stock" id="stock1"></div>
+      <div class="stock" id="stock2"></div>
+      <div class="stock" id="stock3"></div>
+      <div class="stock" id="stock4"></div>
+    
+    
+    </div>
+    <div class="stockRow"id="row2">
+      <div class="stock" id="stock5"></div>
+      <div class="stock" id="stock6"></div>
+      <div class="stock" id="stock7"></div>
+      <div class="stock" id="stock8"></div>
+    
+    
+    
+    </div>
+  </div>
+  <div class="about" id="blockAbout">      
+    <div class="about" id="about">about
+  </div>
+  </div>
+</body>
+</html>
