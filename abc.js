@@ -1,25 +1,25 @@
 
 	//get the input
-	(function myfunction(){
-			var target = document.getElementById('target').value;
-			var comparison = document.getElementById('comparison').value;
-			var text = document.getElementById('text');
+	// (function myfunction(){
+	// 		var target = document.getElementById('target').value;
+	// 		var comparison = document.getElementById('comparison').value;
+	// 		var text = document.getElementById('text');
 
-			alert(target+comparison);
-	})
-	var filename
-	switch(getElementById('target').value){
-			case 1:
-			filename="eps"
-			case 2:
-			filename=""
-			case 3:
-			filemane=""
-			case 4:
-			filename=""
-			case 5:
-			filename:""
-	}
+	// 		alert(target+comparison);
+	// })
+	// var filename
+	// switch(getElementById('target').value){
+	// 		case 1:
+	// 		filename="eps"
+	// 		case 2:
+	// 		filename=""
+	// 		case 3:
+	// 		filemane=""
+	// 		case 4:
+	// 		filename=""
+	// 		case 5:
+	// 		filename:""
+	//}
 	var startYear = "2013"
 	var endYear = "2016"
 	//var text = document.getElementById('text')10
