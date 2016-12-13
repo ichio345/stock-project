@@ -47,7 +47,7 @@
     
 
     function search(){
-        function download (){ d3.csv( getURL(testrequest1.content), 
+         d3.csv( getURL(testrequest), 
 
     function (data){
     console.log(data);
@@ -202,6 +202,6 @@ demo2.style.display = "inline-block";
 }
 }
 )
-}
+
 
 }
