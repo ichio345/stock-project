@@ -46,7 +46,7 @@
     
 
     function search(){
-        function download (){ d3.csv( getURL(testrequest), 
+        function download (){ d3.csv( getURL(testrequest1.content), 
 
     function (data){
     console.log(data);
@@ -160,11 +160,6 @@ console.log(result1)
  dataValue.style.backgroundColor = "skyblue"
  dataValue.style.height = "40px"
  dataValue.style.paddingTop = "10px"    
-}
-
-
-
-
 
 
 
@@ -204,9 +199,8 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
-
-
-
 }
 )
+}
+
 }
