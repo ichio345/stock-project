@@ -1,5 +1,5 @@
 
-	// //get the input
+	// // //get the input
 	//  (function myfunction(){
 	//  		var target1 = document.getElementById('target1').value;
 	//  		var comparison1 = document.getElementById('comparison1').value;
@@ -18,17 +18,17 @@
 	//  		case 4:
 	//  		filename=""
 	//  		case 5:
-	//  		filename:""
+	//  		filename=""
 	// }
  //    var 
     var startYear = "2013"
     var endYear = "2016"
+    var filename = "equity";
     //var text = document.getElementById('text')10
     //var comparison = ">";
     var csv = ".csv";
-    var target = "equity"
     var dataPath = "https://ichio345.github.io/stock-project/";
-    var dataURL = dataPath+target+csv;
+    var dataURL = dataPath+filename+csv;
     var type =1;
     var comparison = 1
     var text = 15253895.6
@@ -139,7 +139,7 @@ console.log(result1)
  stockNumber.style.height = "40px"
  stockNumber.style.paddingTop = "10px"
  var dataValue = document.getElementById("row2")
- dataValue.innerHTML = target 
+ dataValue.innerHTML = filename
  dataValue.style.width = "600px"
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
