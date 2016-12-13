@@ -23,7 +23,8 @@
  //    var 
     var startYear = "2013"
     var endYear = "2016"
-    var filename = "equity";
+    //var filename = "equity";
+
     //var text = document.getElementById('text')10
     //var comparison = ">";
     var csv = ".csv";
@@ -32,11 +33,20 @@
     var type =1;
     var comparison = 1
     var text = 15253895.6
+    var testrequest {target:"equity", comparison:1, data :"15253895.6"}
+    function getURL(request){
+        var filename = request.target 
+        var comparison = request.comparison
+        var text = request.data
+        var dataURL = dataPath+filename+csv;
+        return dataURL
+    }
     //var table = document.getElementById("mytable");
 //average function
     
 
-    function search(){d3.csv(dataURL, 
+    function search(){
+        function download (){ d3.csv( getURL(testrequest), 
 
     function (data){
     console.log(data);
@@ -129,7 +139,11 @@
         }
     }
 }
+
 console.log(result1)
+
+
+
   var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
@@ -146,6 +160,15 @@ console.log(result1)
  dataValue.style.backgroundColor = "skyblue"
  dataValue.style.height = "40px"
  dataValue.style.paddingTop = "10px"    
+}
+
+
+
+
+
+
+
+
 
 
 for(m=0;m<result1.length;m++){
@@ -181,6 +204,9 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
+
+
+
 }
 )
 }
