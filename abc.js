@@ -33,7 +33,7 @@
     var type =1;
     var comparison = 1
     var text = 15253895.6
-    var testrequest {target:"equity", comparison:1, data :"15253895.6"}
+    var testrequest = {target:"equity", comparison:1, data :"15253895.6"}
     function getURL(request){
         var filename = request.target 
         var comparison = request.comparison
