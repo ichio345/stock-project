@@ -154,7 +154,7 @@ console.log(result1)
  stockNumber.style.height = "40px"
  stockNumber.style.paddingTop = "10px"
  var dataValue = document.getElementById("row2")
- dataValue.innerHTML = filename
+ dataValue.innerHTML = "equity"
  dataValue.style.width = "600px"
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
