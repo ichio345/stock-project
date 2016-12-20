@@ -46,8 +46,8 @@
     }
     //var table = document.getElementById("mytable");
     //average function
-    hello (test)
-    function hello(testrequest){
+    // hello (test)
+    // function hello(testrequest){
 
     
     function search(){
@@ -220,4 +220,4 @@ demo2.insertBefore(newDiv2, currentDiv2);
 demo2.style.display = "inline-block";
 }
 
-}
+//}
