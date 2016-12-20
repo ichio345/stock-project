@@ -34,7 +34,7 @@
     var comparison = 1
     var text = 15253895.6
     var testrequest = {target:"equity", comparison:1, data :"15253895.6"}
-    
+     var outcome = [];
     function getURL(request){
         var filename = request.target 
         var comparison = request.comparison
@@ -50,7 +50,7 @@
 
     
     function search(){
-        var outcome = [];
+       
     d3.csv( getURL(testrequest), 
 
     function (data){
@@ -155,12 +155,6 @@ for(z=0; z< result1.length; z++ ){
 }
 console.log(outcome);
 
-}
-
-)
-
-
-
 
     
 
@@ -223,5 +217,9 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
+}
+
+)
+
 }
 //}
