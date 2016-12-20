@@ -41,13 +41,16 @@
         var text = request.data
         var dataURL = dataPath+filename+csv;
         return dataURL
+
     }
     //var table = document.getElementById("mytable");
-//average function
+    //average function
     
-
+    
     function search(){
-         d3.csv( getURL(testrequest), 
+        
+
+    d3.csv( getURL(testrequest), 
 
     function (data){
     console.log(data);
@@ -145,7 +148,10 @@ console.log(result1)
 
 
 
-  var stockNumber = document.getElementById("row1")
+
+
+
+ var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
  stockNumber.style.width = "400px"
@@ -202,6 +208,12 @@ demo2.style.display = "inline-block";
 }
 }
 )
+
+
+
+
+    
+
 
 
 }
