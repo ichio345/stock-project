@@ -34,7 +34,7 @@
     var comparison = 1
     var text = 15253895.6
     var testrequest = {target:"equity", comparison:1, data :"15253895.6"}
-    var outcome = []
+    
     function getURL(request){
         var filename = request.target 
         var comparison = request.comparison
@@ -50,6 +50,7 @@
 
     
     function search(){
+        var outcome = [];
     d3.csv( getURL(testrequest), 
 
     function (data){
@@ -150,6 +151,7 @@ for(z=0; z< result1.length; z++ ){
     var rr = result1[z]
     
     outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
+
 }
 console.log(outcome);
 
