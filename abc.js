@@ -203,7 +203,7 @@ newDiv2.style.borderStyle = "solid";
 newDiv2.style.borderWidth = "1px";
 var demo2 = document.getElementById("mytable2")
 demo2.appendChild(newDiv2);
-var newContent2 = document.createTextNode(y["value"])
+var newContent2 = document.createTextNode(y["value1"])
 newDiv2.appendChild(newContent2);
 var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
