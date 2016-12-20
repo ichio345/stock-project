@@ -154,19 +154,19 @@ console.log(result1)
  var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
- stockNumber.style.width = "400px"
+ stockNumber.style.width = "30%"
  stockNumber.style.textAlign = "center"
  stockNumber.style.display = "inline-block"
- stockNumber.style.height = "40px"
- stockNumber.style.paddingTop = "10px"
+ stockNumber.style.height = "15%"
+ stockNumber.style.paddingTop = "10%"
  var dataValue = document.getElementById("row2")
  dataValue.innerHTML = "equity"
- dataValue.style.width = "600px"
+ dataValue.style.width = "40px"
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
  dataValue.style.backgroundColor = "skyblue"
- dataValue.style.height = "40px"
- dataValue.style.paddingTop = "10px"    
+ dataValue.style.height = "15%"
+ dataValue.style.paddingTop = "10%"    
 
 
 
