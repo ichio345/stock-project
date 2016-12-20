@@ -180,6 +180,7 @@ for(m=0;m<outcome.length;m++){
   
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
+ newDiv.id = y["id"]
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "400px"
  newDiv.style.textAlign = "center"
