@@ -146,6 +146,9 @@ console.log(result1)
 
 
 
+
+
+
  var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
@@ -168,9 +171,9 @@ console.log(result1)
 
 
 
-for(m=0;m<result1.length;m++){
+for(m=0;m<outcome.length;m++){
   
- var y = result1[m]
+ var y = outcome[m]
  var newDiv = document.createElement("div"); 
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "400px"
