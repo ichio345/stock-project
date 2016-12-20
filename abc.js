@@ -34,7 +34,6 @@
     var comparison = 1
     var text = 15253895.6
     var testrequest = {target:"equity", comparison:1, data :"15253895.6"}
-    var outcome = []
     
     function getURL(request){
         var filename = request.target 
@@ -149,6 +148,7 @@
 console.log(result1)
 for(z=0; z< result1.length; z++ ){
     var rr = result1[i]
+    var outcome = []
     outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
 }
 console.log(outcome);
