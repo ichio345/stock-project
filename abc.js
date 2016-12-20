@@ -49,7 +49,7 @@
     // hello (test)
     // function hello(testrequest){
 
-    
+    var result1[]
     function search(){
     d3.csv( getURL(testrequest), 
 
@@ -57,7 +57,7 @@
     console.log(data);
 
     var k ;
-    var result1= []
+    
     for(k=0; k<data.length; k++){
         var x= data[k];
     
