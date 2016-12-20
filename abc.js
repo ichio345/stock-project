@@ -145,6 +145,7 @@
     }
 }
 
+return result1
 }
 )
 
@@ -155,7 +156,7 @@
 
 
 
-}
+
 console.log(result1)
 for(i=0; i< result1.length; i++ ){
     var rr = result1[i]
@@ -219,5 +220,5 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
-
+}
 //}
