@@ -188,7 +188,7 @@ console.log(outcome);
 
 
 for(m=0;m<outcome.length;m++){
-  
+  alert("hi");
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
