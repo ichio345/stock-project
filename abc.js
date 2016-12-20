@@ -146,7 +146,14 @@
 }
 
 return result1
+console.log(result1)
+for(i=0; i< result1.length; i++ ){
+    var rr = result1[i]
+    outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
 }
+
+}
+
 )
 
 
@@ -155,13 +162,6 @@ return result1
     
 
 
-
-
-console.log(result1)
-for(i=0; i< result1.length; i++ ){
-    var rr = result1[i]
-    outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
-}
 
 
 
