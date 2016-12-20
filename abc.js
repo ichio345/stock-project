@@ -147,7 +147,7 @@
 
 console.log(result1)
 for(z=0; z< result1.length; z++ ){
-    var rr = result1[i]
+    var rr = result1[z]
     var outcome = []
     outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
 }
