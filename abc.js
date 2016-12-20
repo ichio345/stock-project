@@ -46,7 +46,9 @@
     }
     //var table = document.getElementById("mytable");
     //average function
-    
+    hello (test)
+    function hello(testrequest){
+
     
     function search(){
     d3.csv( getURL(testrequest), 
@@ -143,13 +145,22 @@
     }
 }
 
+}
+)
+
+
+
+
+    
+
+
+
+}
 console.log(result1)
 for(i=0; i< result1.length; i++ ){
     var rr = result1[i]
     outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
 }
-
-
 
 
 
@@ -178,6 +189,7 @@ for(m=0;m<outcome.length;m++){
   
  var y = outcome[m]
  var newDiv = document.createElement("div"); 
+ newDiv.setAttribute("id", y["id"]) ;
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
@@ -207,14 +219,5 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
-}
-)
-
-
-
-
-    
-
-
 
 }
