@@ -190,7 +190,7 @@ for(m=0;m<outcome.length;m++){
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
- newDiv.setAttribute("onclick", al())
+ newDiv.setAttribute("onclick", "al()")
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
