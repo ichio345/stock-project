@@ -189,7 +189,7 @@ for(i=0; i< result1.length; i++ ){
 for(m=0;m<outcome.length;m++){
   
  var y = outcome[m]
- var newDiv = document.createElement("div"); 
+ var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
