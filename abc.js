@@ -193,7 +193,7 @@ for(m=0;m<outcome.length;m++){
  newDiv.style.textAlign = "center"
  newDiv.style.borderStyle = "solid"
  newDiv.style.borderWidth = "1px"
- newDiv.style.height = "10px"
+ newDiv.style.height = "100%"
 
   var demo = document.getElementById("mytable");
 
@@ -204,13 +204,13 @@ for(m=0;m<outcome.length;m++){
   demo.insertBefore(newDiv, currentDiv);
   demo.style.display = "inline-block";
   //value display
-var newDiv2 =document.createElement("div")
+var newDiv2 =document.createElement("button")
 newDiv2.style.backgroundColor="papayawhip"
 newDiv2.style.width = "100%"
 newDiv2.style.textAlign = "center"
 newDiv2.style.borderStyle = "solid";
 newDiv2.style.borderWidth = "1px";
-newDiv2.style.height = "10px"
+newDiv2.style.height = "100%"
 var demo2 = document.getElementById("mytable2")
 demo2.appendChild(newDiv2);
 var newContent2 = document.createTextNode(y["value1"])
