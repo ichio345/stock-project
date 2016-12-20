@@ -154,23 +154,21 @@ for(i=0; i< result1.length; i++ ){
 
 
 
+ 
  var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
- stockNumber.style.width = "400px"
  stockNumber.style.textAlign = "center"
  stockNumber.style.display = "inline-block"
  stockNumber.style.height = "40px"
  stockNumber.style.paddingTop = "10px"
  var dataValue = document.getElementById("row2")
  dataValue.innerHTML = "equity"
- dataValue.style.width = "600px"
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
  dataValue.style.backgroundColor = "skyblue"
  dataValue.style.height = "40px"
  dataValue.style.paddingTop = "10px"    
-
 
 
 
