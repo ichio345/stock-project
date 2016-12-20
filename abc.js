@@ -145,21 +145,18 @@
 console.log(result1)
 
 
-document.getElementById("resultHere").style.width = "100%"
-
-
 
  var stockNumber = document.getElementById("row1")
  stockNumber.innerHTML = "股票代號";
  stockNumber.style.backgroundColor = "skyblue"
- stockNumber.style.width = "30%"
+ stockNumber.style.width = "400px"
  stockNumber.style.textAlign = "center"
  stockNumber.style.display = "inline-block"
  stockNumber.style.height = "40px"
  stockNumber.style.paddingTop = "10px"
  var dataValue = document.getElementById("row2")
  dataValue.innerHTML = "equity"
- dataValue.style.width = "50%"
+ dataValue.style.width = "600px"
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
  dataValue.style.backgroundColor = "skyblue"
@@ -176,7 +173,7 @@ for(m=0;m<result1.length;m++){
  var y = result1[m]
  var newDiv = document.createElement("div"); 
  newDiv.style.backgroundColor = "Gainsboro";
- newDiv.style. width = "30%"
+ newDiv.style. width = "400px"
  newDiv.style.textAlign = "center"
  newDiv.style.borderStyle = "solid"
  newDiv.style.borderWidth = "1px"
@@ -192,7 +189,7 @@ for(m=0;m<result1.length;m++){
   //value display
 var newDiv2 =document.createElement("div")
 newDiv2.style.backgroundColor="papayawhip"
-newDiv2.style.width = "50%"
+newDiv2.style.width = "600px"
 newDiv2.style.textAlign = "center"
 newDiv2.style.borderStyle = "solid";
 newDiv2.style.borderWidth = "1px";
