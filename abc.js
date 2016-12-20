@@ -145,7 +145,7 @@
 console.log(result1)
 
 
-documet.getElementById("resultHere").style.width = "100%"
+document.getElementById("resultHere").style.width = "100%"
 
 
 
