@@ -49,7 +49,7 @@
     // hello (test)
     // function hello(testrequest){
 
-    var result1[]
+    var result1=[]
     function search(){
     d3.csv( getURL(testrequest), 
 
