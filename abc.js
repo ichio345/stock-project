@@ -179,10 +179,9 @@ for(i=0; i< result1.length; i++ ){
 for(m=0;m<outcome.length;m++){
   
  var y = outcome[m]
- var newDiv = document.createElement("button"); 
- newDiv.setAttribute("id",y["id"])
+ var newDiv = document.createElement("div"); 
  newDiv.style.backgroundColor = "Gainsboro";
- newDiv.style. width = "400px"
+ newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
  newDiv.style.borderStyle = "solid"
  newDiv.style.borderWidth = "1px"
@@ -198,7 +197,7 @@ for(m=0;m<outcome.length;m++){
   //value display
 var newDiv2 =document.createElement("div")
 newDiv2.style.backgroundColor="papayawhip"
-newDiv2.style.width = "600px"
+newDiv2.style.width = "100%"
 newDiv2.style.textAlign = "center"
 newDiv2.style.borderStyle = "solid";
 newDiv2.style.borderWidth = "1px";
