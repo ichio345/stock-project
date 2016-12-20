@@ -147,10 +147,11 @@
 
 
 console.log(result1)
-for(i=0; i< result1.length; i++ ){
+for(z=0; z< result1.length; z++ ){
     var rr = result1[i]
     outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
 }
+console.log(outcome);
 
 }
 
