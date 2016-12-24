@@ -103,6 +103,7 @@
                             if (average >= text ){
                                 result1.push({id: parseInt(x["stockNumber"]) , companyName:x["companyName"], value: average})
                             }
+                        
                             }
                             else if (comparison ==2){
                                 if (average <= text){
