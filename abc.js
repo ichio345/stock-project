@@ -160,7 +160,8 @@ for(m=0;m<outcome.length;m++){
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
- newDiv.onclick = alert(y["id"])
+ newDiv.onclick = function(){alert(y["id"])}
+ 
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
