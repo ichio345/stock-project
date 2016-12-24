@@ -143,7 +143,7 @@ console.log(outcome);
  stockNumber.style.height = "40px"
  stockNumber.style.paddingTop = "10px"
  var dataValue = document.getElementById("row2")
- dataValue.innerHTML = "equity"
+ dataValue.innerHTML = testrequest["target"]
  dataValue.style.textAlign = "center"
  dataValue.style.display = "inline-block"
  dataValue.style.backgroundColor = "skyblue"
