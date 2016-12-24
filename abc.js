@@ -161,7 +161,7 @@ for(m=0;m<outcome.length;m++){
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
  var z = document.getElementById(y["id"]);
-z.onclick = function(){alert("hi")};
+ alert(y["id"]);
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
