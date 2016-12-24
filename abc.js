@@ -33,7 +33,7 @@
     var type =1;
     var comparison = 1
     var text = 2
-    var testrequest = {target:"ROE", comparison:1, data :"15253895.6"}
+    var testrequest = {target:"ROE", comparison:1, data :"2"}
      var outcome = [];
     function getURL(request){
         var filename = request.target 
@@ -101,12 +101,12 @@
                                 //function for >,<
                             if (comparison == 1){
                             if (average >= text ){
-                                result1.push({id: parseInt(x["CompanyName"]) , value: average})
+                                result1.push({id: parseInt(x["stockNumber"]) , companyName:x["companyName"], value: average})
                             }
                             }
                             else if (comparison ==2){
                                 if (average <= text){
-                                    result1.push({id: parseInt(x["CompanyName"]) , value: average})                         }
+                                    result1.push({id: parseInt(x["stockNumber"]) ,companyName:x["companyName"], value: average})                         }
                             }
                                 
     }
@@ -152,7 +152,7 @@ console.log(result1)
 for(z=0; z< result1.length; z++ ){
     var rr = result1[z]
     
-    outcome.push({id: parseInt(rr["id"]), value1: rr["value"]})
+    outcome.push({id: parseInt(rr["id"]), companyName:rr["companyName"],value1: rr["value"]})
 
 }
 console.log(outcome);
@@ -180,6 +180,7 @@ console.log(outcome);
  dataValue.style.backgroundColor = "skyblue"
  dataValue.style.height = "40px"
  dataValue.style.paddingTop = "10px"    
+
 
 
 
