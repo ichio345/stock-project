@@ -27,13 +27,13 @@
 
     //var text = document.getElementById('text')10
     //var comparison = ">";
-    var csv = ".csv";
+    var csv = "-js.csv";
     var dataPath = "https://ichio345.github.io/stock-project/";
     //var dataURL = dataPath+filename+csv;
     var type =1;
     var comparison = 1
-    var text = 15253895.6
-    var testrequest = {target:"equity", comparison:1, data :"15253895.6"}
+    var text = 2
+    var testrequest = {target:"ROE", comparison:1, data :"15253895.6"}
      var outcome = [];
     function getURL(request){
         var filename = request.target 
@@ -190,7 +190,7 @@ for(m=0;m<outcome.length;m++){
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
- newDiv.onclick = "al();"
+ newDiv.setAttribute("onclick","")
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
