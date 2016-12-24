@@ -112,40 +112,8 @@
                                 
     }
     
-    //minimum function
-    else{
-        var text1=0;
-        var i ;
-        var arr=[];
-        var j;
-
-        for (i=parseInt(startYear);i < parseInt(endYear)+1 ;i++){
-            for(j=1; j<=4; j++){
-                if (i<2016){
-                arr.push(x[i+"Q"+j]);   
-                }
-                else{
-                arr.push(x[i+"Q1"],x[i+"Q2"],x[i+"Q3"]);
-                }
-                
-            }
-            
-        }
-        console.log(arr)
-        var min = Math.min.apply(null, arr)
-        
-        if (comparison == 1)
-        {
-            if (min >= text ){
-                result1.push({id: parseInt(x["CompanyName"]) , value: min})         }
-        }
-        else if (comparison ==2)
-        {
-            if (min <= text){
-                result1.push({id: parseInt(x["CompanyName"]) , value: min})
-            }
-        }
-    }
+    
+   
 }
 
 
