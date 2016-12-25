@@ -37,6 +37,7 @@
     console.log(data1);
     
     var k ;
+    var result1 = []
     
     for(k=0; k<data1.length; k++){
         var x= data1[k];
@@ -108,7 +109,7 @@ if(testrequest2.boolean==1){
 
     function (data2){
     console.log(data2);
-    
+    var result2 = []
     var k ;
     
     for(k=0; k<data2.length; k++){
@@ -183,6 +184,7 @@ if(testrequest3.boolean == 1){
 
     function (data3){
     console.log(data3);
+    var result3 = []
     var k ;
     
     for(k=0; k<data3.length; k++){
@@ -257,6 +259,7 @@ if(testrequest4.boolean == 1){
 
     function (data4){
     console.log(data4);
+    var result4 = []
     var k ;
     
     for(k=0; k<data4.length; k++){
@@ -457,7 +460,7 @@ var go =1
 return go
 }
 function search(){
-    var outcome=[]
+
 if (showResult()==1){
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
