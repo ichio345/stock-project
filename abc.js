@@ -8,7 +8,11 @@
     var text = 2
     var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
     var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
+    var testrequest3 = {boolean:0}
+    var testrequest4 = {boolean:0}
      var outcome = [];
+    }
+    }
     
     function getURL(request){
         var filename = request.target 
@@ -28,7 +32,7 @@
     var result1 = []
     var k ;
     
-    for(k=0; k<data.length; k++){
+    for(k=0; k<data1.length; k++){
         var x= data1[k];
     
 
@@ -99,7 +103,7 @@ if(testrequest2.boolean==1){
     var result2 = []
     var k ;
     
-    for(k=0; k<data.length; k++){
+    for(k=0; k<data2.length; k++){
         var x= data2[k];
     
 
@@ -171,7 +175,7 @@ if(testrequest3.boolean = 1){
     var result3 = []
     var k ;
     
-    for(k=0; k<data.length; k++){
+    for(k=0; k<data3.length; k++){
         var x= data3[k];
     
 
@@ -243,7 +247,7 @@ if(testrequest4.boolean = 1){
     var result4 = []
     var k ;
     
-    for(k=0; k<data.length; k++){
+    for(k=0; k<data4.length; k++){
         var x= data4[k];
     
 
