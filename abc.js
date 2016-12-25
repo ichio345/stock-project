@@ -11,6 +11,7 @@
     var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
     var testrequest3 = {target:"DY", comparison:0, data:"20", boolean:1}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
+    var outcome=[]
      var result1 = []
      var result2 = []
      var result3 = []
