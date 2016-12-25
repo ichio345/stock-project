@@ -11,7 +11,7 @@
     var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
     var testrequest3 = {target:"DY", comparison:0, data:"20", boolean:1}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
-    var outcome=[]
+    
      var result1 = []
      var result2 = []
      var result3 = []
@@ -29,15 +29,14 @@
     }
 
        
-    function showResult(){
+    function search(){
         
     d3.csv( getURL(testrequest), 
 
-    function (data1){
+    function first(data1){
     console.log(data1);
     
     var k ;
-    var result1 = []
     
     for(k=0; k<data1.length; k++){
         var x= data1[k];
@@ -98,7 +97,7 @@
 
 console.log(result1)
 
-
+return result1
 }
 
 )
@@ -109,7 +108,6 @@ if(testrequest2.boolean==1){
 
     function (data2){
     console.log(data2);
-    var result2 = []
     var k ;
     
     for(k=0; k<data2.length; k++){
@@ -184,7 +182,6 @@ if(testrequest3.boolean == 1){
 
     function (data3){
     console.log(data3);
-    var result3 = []
     var k ;
     
     for(k=0; k<data3.length; k++){
@@ -259,7 +256,6 @@ if(testrequest4.boolean == 1){
 
     function (data4){
     console.log(data4);
-    var result4 = []
     var k ;
     
     for(k=0; k<data4.length; k++){
@@ -457,11 +453,11 @@ console.log(result4)
 // demo2.style.display = "inline-block";
 // }
 var go =1
-return go
+return result1 
 }
-function search(){
 
-if (showResult()==1){
+var outcome = []
+if (search().length > 0){
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
     if(testrequest2.boolean == 1){
@@ -503,5 +499,3 @@ else {
 console.log(outcome)
 
 }
-}
-//}
