@@ -1,3 +1,4 @@
+   
     var startYear = "2013"
     var endYear = "2016"
 
@@ -327,47 +328,47 @@ else {
 }
 
 
-//produce outcome
-var outcome=[]
-for (i=0; i< result1.length ; i++){
-    var r1 = result1[i]
-    if(request2.boolean == 1){
-    for (j=0;j<result2.length;j++){
-        var r2 =result2[j]
-        if (r1["id"]==r2["id"]){
-            if(request3.boolean==1){
-            for(k=0;k<result3.length; k++){
-            var r3 = result3[k]
-            if(r1["id"]== r3["id"]){
-                if(request4.boolean == 1){
-                for(l=0;l<result4.length;l++){
-                    var r4 = result4[l]
-                    if(r1["id"]=r4["id"]){
-                        outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
-                    }
-                }
-            }
-            else{
-                outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
-            }
-            }
+// //produce outcome
+// var outcome=[]
+// for (i=0; i< result1.length ; i++){
+//     var r1 = result1[i]
+//     if(request2.boolean == 1){
+//     for (j=0;j<result2.length;j++){
+//         var r2 =result2[j]
+//         if (r1["id"]==r2["id"]){
+//             if(request3.boolean==1){
+//             for(k=0;k<result3.length; k++){
+//             var r3 = result3[k]
+//             if(r1["id"]== r3["id"]){
+//                 if(request4.boolean == 1){
+//                 for(l=0;l<result4.length;l++){
+//                     var r4 = result4[l]
+//                     if(r1["id"]=r4["id"]){
+//                         outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
+//                     }
+//                 }
+//             }
+//             else{
+//                 outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
+//             }
+//             }
 
 
             
-        }
-        }
-        else{
-            outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
-        }
+//         }
+//         }
+//         else{
+//             outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
+//         }
         
-    }
-}
-}
-else {
-    outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
-}
-}
-console.log(outcome)
+//     }
+// }
+// }
+// else {
+//     outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
+// }
+// }
+// console.log(outcome)
 
 
 
@@ -398,62 +399,62 @@ console.log(outcome)
 
 
  
- var stockNumber = document.getElementById("row1")
- stockNumber.innerHTML = "股票代號";
- stockNumber.style.backgroundColor = "skyblue"
- stockNumber.style.textAlign = "center"
- stockNumber.style.display = "inline-block"
- stockNumber.style.height = "40px"
- stockNumber.style.paddingTop = "10px"
- var dataValue = document.getElementById("row2")
- dataValue.innerHTML = testrequest["target"]
- dataValue.style.textAlign = "center"
- dataValue.style.display = "inline-block"
- dataValue.style.backgroundColor = "skyblue"
- dataValue.style.height = "40px"
- dataValue.style.paddingTop = "10px"    
+ // var stockNumber = document.getElementById("row1")
+ // stockNumber.innerHTML = "股票代號";
+ // stockNumber.style.backgroundColor = "skyblue"
+ // stockNumber.style.textAlign = "center"
+ // stockNumber.style.display = "inline-block"
+ // stockNumber.style.height = "40px"
+ // stockNumber.style.paddingTop = "10px"
+ // var dataValue = document.getElementById("row2")
+ // dataValue.innerHTML = testrequest["target"]
+ // dataValue.style.textAlign = "center"
+ // dataValue.style.display = "inline-block"
+ // dataValue.style.backgroundColor = "skyblue"
+ // dataValue.style.height = "40px"
+ // dataValue.style.paddingTop = "10px"    
 
 
 
 
 
-alert(outcome.length)
-for(m=0;m<outcome.length;m++){
- // alert("hi");
- var y = outcome[m]
- var newDiv = document.createElement("button"); 
- newDiv.setAttribute("id", y["id"]) ;
- newDiv.style.backgroundColor = "Gainsboro";
- newDiv.style. width = "100%"
- newDiv.style.textAlign = "center"
- newDiv.style.borderStyle = "solid"
- newDiv.style.borderWidth = "1px"
- newDiv.style.height = "100%"
+// alert(outcome.length)
+// for(m=0;m<outcome.length;m++){
+//  // alert("hi");
+//  var y = outcome[m]
+//  var newDiv = document.createElement("button"); 
+//  newDiv.setAttribute("id", y["id"]) ;
+//  newDiv.style.backgroundColor = "Gainsboro";
+//  newDiv.style. width = "100%"
+//  newDiv.style.textAlign = "center"
+//  newDiv.style.borderStyle = "solid"
+//  newDiv.style.borderWidth = "1px"
+//  newDiv.style.height = "100%"
 
-  var demo = document.getElementById("mytable");
+//   var demo = document.getElementById("mytable");
 
- demo.appendChild(newDiv);
-  var newContent = document.createTextNode(y["id"]); 
-  newDiv.appendChild(newContent);
-  var currentDiv = document.getElementById("div"); 
-  demo.insertBefore(newDiv, currentDiv);
-  demo.style.display = "inline-block";
-  //value display
-var newDiv2 =document.createElement("button")
-newDiv2.style.backgroundColor="papayawhip"
-newDiv2.style.width = "100%"
-newDiv2.style.textAlign = "center"
-newDiv2.style.borderStyle = "solid";
-newDiv2.style.borderWidth = "1px";
-newDiv2.style.height = "100%"
-var demo2 = document.getElementById("mytable2")
-demo2.appendChild(newDiv2);
-var newContent2 = document.createTextNode(y["value1"])
-newDiv2.appendChild(newContent2);
-var currentDiv2 = document.getElementById("div");
-demo2.insertBefore(newDiv2, currentDiv2);   
-demo2.style.display = "inline-block";
-}
+//  demo.appendChild(newDiv);
+//   var newContent = document.createTextNode(y["id"]); 
+//   newDiv.appendChild(newContent);
+//   var currentDiv = document.getElementById("div"); 
+//   demo.insertBefore(newDiv, currentDiv);
+//   demo.style.display = "inline-block";
+//   //value display
+// var newDiv2 =document.createElement("button")
+// newDiv2.style.backgroundColor="papayawhip"
+// newDiv2.style.width = "100%"
+// newDiv2.style.textAlign = "center"
+// newDiv2.style.borderStyle = "solid";
+// newDiv2.style.borderWidth = "1px";
+// newDiv2.style.height = "100%"
+// var demo2 = document.getElementById("mytable2")
+// demo2.appendChild(newDiv2);
+// var newContent2 = document.createTextNode(y["value1"])
+// newDiv2.appendChild(newContent2);
+// var currentDiv2 = document.getElementById("div");
+// demo2.insertBefore(newDiv2, currentDiv2);   
+// demo2.style.display = "inline-block";
+// }
 
 }
 //}
