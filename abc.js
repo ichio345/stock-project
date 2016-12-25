@@ -1,41 +1,15 @@
-
-	// // //get the input
-	//  (function myfunction(){
-	//  		var target1 = document.getElementById('target1').value;
-	//  		var comparison1 = document.getElementById('comparison1').value;
-	//  		var text1 = document.getElementById('text1');
-
-	//  		alert(target+comparison);
-	//  })
-	// var filename
-	//  switch(getElementById('target1').value){
-	//  		case 1:
-	//  		filename="eps"
-	//  		case 2:
-	//  		filename=""
- //     		case 3:
-	//  		filemane=""
-	//  		case 4:
-	//  		filename=""
-	//  		case 5:
-	//  		filename=""
-	// }
- //    var 
     var startYear = "2013"
     var endYear = "2016"
 
-    //var filename = "equity";
-
-    //var text = document.getElementById('text')10
-    //var comparison = ">";
-    var csv = "-js.txt";
+    var csv = ".txt";
     var dataPath = "https://ichio345.github.io/stock-project/";
-    //var dataURL = dataPath+filename+csv;
     var type =1;
     var comparison = 1
     var text = 2
-    var testrequest = {target:"ATNI", comparison:1, data :"2"}
+    var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
+    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
      var outcome = [];
+    }
     function getURL(request){
         var filename = request.target 
         var comparison = request.comparison
@@ -44,25 +18,18 @@
         return dataURL
 
     }
-    //var table = document.getElementById("mytable");
-    //average function
-    // hello (test)
-    // function hello(testrequest){
-        var hi = alert('hi');
-    function al(){
-        alert("hi")
-    }
+       
     function search(){
        
     d3.csv( getURL(testrequest), 
 
-    function (data){
-    console.log(data);
+    function (data1){
+    console.log(data1);
     var result1 = []
     var k ;
     
     for(k=0; k<data.length; k++){
-        var x= data[k];
+        var x= data1[k];
     
 
 
@@ -119,6 +86,282 @@
 
 
 console.log(result1)
+}
+
+)
+
+
+if(testrequest2.boolean==1){
+     d3.csv( getURL(testrequest2), 
+
+    function (data2){
+    console.log(data2);
+    var result2 = []
+    var k ;
+    
+    for(k=0; k<data.length; k++){
+        var x= data2[k];
+    
+
+
+    if  (type > 0){
+    var text1 =0
+    
+    var i;
+    //the function for endyear=2016
+    if(parseInt(endYear) > 2015){
+    for (i=parseInt(startYear);i<=2015; i++){
+        
+        var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+           text1  += parseInt(sum);
+    }
+    var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
+
+    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    
+
+
+    
+        
+    }
+                //the function for endyear is not 2016
+
+                else{
+                    for (i=parseInt(startYear);i<=parseInt(endYear); i++){
+                    
+                    sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+                    
+                    text1 += parseInt(sum) ;
+                    }
+                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    
+                    }
+                    
+                                //function for >,<
+                            if (comparison == 1){
+                            if (average >= text ){
+                                result2.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
+                            }
+
+                            }
+                            else if (comparison ==2){
+                                if (average <= text){
+                                    result2.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
+                            }
+                                
+    }
+    
+    
+   
+}
+
+
+console.log(result2)
+}
+
+)
+
+}
+
+if(testrequest3.boolean = 1){
+     d3.csv( getURL(testrequest3), 
+
+    function (data3){
+    console.log(data3);
+    var result3 = []
+    var k ;
+    
+    for(k=0; k<data.length; k++){
+        var x= data3[k];
+    
+
+
+    if  (type > 0){
+    var text1 =0
+    
+    var i;
+    //the function for endyear=2016
+    if(parseInt(endYear) > 2015){
+    for (i=parseInt(startYear);i<=2015; i++){
+        
+        var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+           text1  += parseInt(sum);
+    }
+    var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
+
+    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    
+
+
+    
+        
+    }
+                //the function for endyear is not 2016
+
+                else{
+                    for (i=parseInt(startYear);i<=parseInt(endYear); i++){
+                    
+                    sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+                    
+                    text1 += parseInt(sum) ;
+                    }
+                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    
+                    }
+                    
+                                //function for >,<
+                            if (comparison == 1){
+                            if (average >= text ){
+                                result3.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
+                            }
+
+                            }
+                            else if (comparison ==2){
+                                if (average <= text){
+                                    result3.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
+                            }
+                                
+    }
+    
+    
+   
+}
+
+
+console.log(result3)
+}
+
+)
+
+
+}
+if(testrequest4.boolean = 1){
+     d3.csv( getURL(testrequest4), 
+
+    function (data4){
+    console.log(data4);
+    var result4 = []
+    var k ;
+    
+    for(k=0; k<data.length; k++){
+        var x= data4[k];
+    
+
+
+    if  (type > 0){
+    var text1 =0
+    
+    var i;
+    //the function for endyear=2016
+    if(parseInt(endYear) > 2015){
+    for (i=parseInt(startYear);i<=2015; i++){
+        
+        var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+           text1  += parseInt(sum);
+    }
+    var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
+
+    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    
+
+
+    
+        
+    }
+                //the function for endyear is not 2016
+
+                else{
+                    for (i=parseInt(startYear);i<=parseInt(endYear); i++){
+                    
+                    sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
+                    
+                    text1 += parseInt(sum) ;
+                    }
+                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    
+                    }
+                    
+                                //function for >,<
+                            if (comparison == 1){
+                            if (average >= text ){
+                                result4.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
+                            }
+
+                            }
+                            else if (comparison ==2){
+                                if (average <= text){
+                                    result4.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
+                            }
+                                
+    }
+    
+    
+   
+}
+
+
+console.log(result4)
+}
+
+)
+
+
+}
+
+//produce outcome
+var outcome=[]
+for (i=0; i< result1.length ; i++){
+    var r1 = result1[i]
+    if(request2.boolean == 1){
+    for (j=0;j<result2.length;j++){
+        var r2 =result2[j]
+        if (r1["id"]==r2["id"]){
+            if(request3.boolean==1){
+            for(k=0;k<result3.length; k++){
+            var r3 = result3[k]
+            if(r1["id"]== r3["id"]){
+                if(request4.boolean == 1){
+                for(l=0;l<result4.length;l++){
+                    var r4 = result4[l]
+                    if(r1["id"]=r4["id"]){
+                        outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
+                    }
+                }
+            }
+            else{
+                outcome.push(id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"])
+            }
+            }
+
+
+            
+        }
+        }
+        else{
+            outcome.push(id:r1["id"], companyName:r1["companyName"] value1: r1["value"],value2: r2["value"])
+        }
+        
+    }
+}
+}
+else {
+    outcome.push(id:r1["id"], companyName:r1["companyName"],value1: r1["value"])
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for(z=0; z< result1.length; z++ ){
     var rr = result1[z]
     
@@ -161,8 +404,6 @@ for(m=0;m<outcome.length;m++){
  var y = outcome[m]
  var newDiv = document.createElement("button"); 
  newDiv.setAttribute("id", y["id"]) ;
- newDiv.setAttribute("onclick", hi)
-
  newDiv.style.backgroundColor = "Gainsboro";
  newDiv.style. width = "100%"
  newDiv.style.textAlign = "center"
@@ -194,9 +435,6 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
-}
-
-)
 
 }
 //}
