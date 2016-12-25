@@ -11,10 +11,7 @@
     var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
     var testrequest3 = {target:"DY", comparison:0, data:"20", boolean:1}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
-     var result1 = []
-     var result2 = []
-     var result3 = []
-     var result4 = []
+ 
     
     
     function getURL(request){
@@ -457,7 +454,10 @@ return go
 function search(){
     var outcome=[]
 if (showResult()==1){
-    
+     var result1 = []
+     var result2 = []
+     var result3 = []
+     var result4 = []
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
     if(testrequest2.boolean == 1){
