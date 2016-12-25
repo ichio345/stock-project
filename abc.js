@@ -352,6 +352,7 @@ else {
     outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
 }
 }
+console.log(outcome)
 
 
 
@@ -365,14 +366,13 @@ else {
 
 
 
-
-for(z=0; z< result1.length; z++ ){
-    var rr = result1[z]
+// for(z=0; z< result1.length; z++ ){
+//     var rr = result1[z]
     
-    outcome.push({id: parseInt(rr["id"]), companyName:rr["companyName"],value1: rr["value"]})
+//     outcome.push({id: parseInt(rr["id"]), companyName:rr["companyName"],value1: rr["value"]})
 
-}
-console.log(outcome);
+// }
+// console.log(outcome);
 
 
     
