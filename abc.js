@@ -11,8 +11,8 @@
     var testrequest3 = {boolean:0}
     var testrequest4 = {boolean:0}
      var outcome = [];
-    }
-    }
+    
+    
     
     function getURL(request){
         var filename = request.target 
