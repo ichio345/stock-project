@@ -456,8 +456,9 @@ var go =1
 return go
 }
 function search(){
-if (showResult()==1){
     var outcome=[]
+if (showResult()==1){
+    
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
     if(testrequest2.boolean == 1){
