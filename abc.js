@@ -342,7 +342,7 @@ for (i=0; i< result1.length ; i++){
         }
         }
         else{
-            outcome.push({id:r1["id"], companyName:r1["companyName"] value1: r1["value"],value2: r2["value"]})
+            outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
         }
         
     }
