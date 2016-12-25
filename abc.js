@@ -26,6 +26,7 @@
         return dataURL
 
     }
+
        
     function search(){
         
@@ -454,6 +455,9 @@ var currentDiv2 = document.getElementById("div");
 demo2.insertBefore(newDiv2, currentDiv2);   
 demo2.style.display = "inline-block";
 }
-
+var go =1
+return go
 }
+
+alert(go)
 //}
