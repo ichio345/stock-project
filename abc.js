@@ -166,6 +166,9 @@ console.log(result2)
 )
 
 }
+else{
+    
+}
 
 if(testrequest3.boolean = 1){
      d3.csv( getURL(testrequest3), 
@@ -239,6 +242,9 @@ console.log(result3)
 
 
 }
+else{
+
+}
 if(testrequest4.boolean = 1){
      d3.csv( getURL(testrequest4), 
 
@@ -309,6 +315,9 @@ console.log(result4)
 
 )
 
+
+}
+else {
 
 }
 
