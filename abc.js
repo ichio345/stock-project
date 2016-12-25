@@ -28,13 +28,13 @@
 
     //var text = document.getElementById('text')10
     //var comparison = ">";
-    var csv = "-js.csv";
+    var csv = "-js.txt";
     var dataPath = "https://ichio345.github.io/stock-project/";
     //var dataURL = dataPath+filename+csv;
     var type =1;
     var comparison = 1
     var text = 2
-    var testrequest = {target:"ROE", comparison:1, data :"2"}
+    var testrequest = {target:"ATNI", comparison:1, data :"2"}
      var outcome = [];
     function getURL(request){
         var filename = request.target 
