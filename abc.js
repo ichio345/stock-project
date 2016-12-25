@@ -170,7 +170,7 @@ else{
 
 }
 
-if(testrequest3.boolean = 1){
+if(testrequest3.boolean == 1){
      d3.csv( getURL(testrequest3), 
 
     function (data3){
@@ -245,7 +245,7 @@ console.log(result3)
 else{
 
 }
-if(testrequest4.boolean = 1){
+if(testrequest4.boolean == 1){
      d3.csv( getURL(testrequest4), 
 
     function (data4){
