@@ -9,7 +9,7 @@
     var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
     var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
      var outcome = [];
-    }
+    
     function getURL(request){
         var filename = request.target 
         var comparison = request.comparison
