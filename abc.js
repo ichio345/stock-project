@@ -460,15 +460,15 @@ if (showResult()==1){
     var outcome=[]
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
-    if(request2.boolean == 1){
+    if(testrequest2.boolean == 1){
     for (j=0;j<result2.length;j++){
         var r2 =result2[j]
         if (r1["id"]==r2["id"]){
-            if(request3.boolean==1){
+            if(testrequest3.boolean==1){
             for(k=0;k<result3.length; k++){
             var r3 = result3[k]
             if(r1["id"]== r3["id"]){
-                if(request4.boolean == 1){
+                if(testrequest4.boolean == 1){
                 for(l=0;l<result4.length;l++){
                     var r4 = result4[l]
                     if(r1["id"]=r4["id"]){
