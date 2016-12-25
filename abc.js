@@ -7,9 +7,9 @@
     var comparison = 1
     var text = 2
     var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
-    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
-    var testrequest3 = {boolean:0}
-    var testrequest4 = {boolean:0}
+    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:0}
+    var testrequest3 = {target:"DY", comparison:0, data:"3", boolean:0}
+    var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
      var outcome = [];
     
     
@@ -167,7 +167,7 @@ console.log(result2)
 
 }
 else{
-    
+
 }
 
 if(testrequest3.boolean = 1){
