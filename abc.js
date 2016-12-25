@@ -102,13 +102,13 @@
                                 //function for >,<
                             if (comparison == 1){
                             if (average >= text ){
-                                result1.push({id: parseInt(x["SN"]) , companyName:x["companyName"], value: average})
+                                result1.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
                             else if (comparison ==2){
                                 if (average <= text){
-                                    result1.push({id: parseInt(x["SN"]) ,companyName:x["companyName"], value: average})                         }
+                                    result1.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
                             }
                                 
     }
