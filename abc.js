@@ -24,6 +24,11 @@
     }
        
     function search(){
+        
+        function showResult(){
+
+
+        
        
     d3.csv( getURL(testrequest), 
 
@@ -322,7 +327,11 @@ console.log(result4)
 else {
 
 }
-
+return result1
+return result2
+return result3
+return result4
+}
 //produce outcome
 var outcome=[]
 for (i=0; i< result1.length ; i++){
