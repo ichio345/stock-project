@@ -34,6 +34,10 @@
 
 function search(){
         var outcome = []
+     var result1 = []
+     var result2 = []
+     var result3 = []
+     var result4 = []
      //result1   
     d3.csv( getURL(testrequest), 
 
