@@ -548,7 +548,7 @@ else{
         }
         }
                     console.log(outcome)
-                     var stockNumber = document.getElementById("table2")
+                     var stockNumber = document.getElementById("mytable2")
                      stockNumber.innerHTML = "股票代號";
                      stockNumber.style.backgroundColor = "skyblue"
                      stockNumber.style.textAlign = "center"
@@ -556,7 +556,7 @@ else{
                      stockNumber.style.height = "40px"
                      stockNumber.style.paddingTop = "10px"
                      stockNumber.style.width = "25%"
-                     var dataValue = document.getElementById("table2")
+                     var dataValue = document.getElementById("mytable2")
                      dataValue.innerHTML = "公司名稱";
                      dataValue.style.textAlign = "center"
                      dataValue.style.display = "inline-block"
@@ -565,7 +565,7 @@ else{
                      dataValue.style.paddingTop = "10px"    
                      dataValue.style.width = "25%"
 
-                     var datavalue2 = document.getElementById("table2")
+                     var datavalue2 = document.getElementById("mytable2")
                      datavalue2.innerHTML = testrequest["target"]
                      datavalue2.style.textAlign = "center"
                      datavalue2.style.display = "inline-block"
@@ -574,7 +574,7 @@ else{
                      datavalue2.style.paddingTop = "10px"    
                      datavalue2.style.width = "25%"
 
-                     var datavalue3 = document.getElementById("table2")
+                     var datavalue3 = document.getElementById("mytable2")
                      datavalue3.innerHTML = testrequest2["target"]
                      datavalue3.style.textAlign = "center"
                      datavalue3.style.display = "inline-block"
