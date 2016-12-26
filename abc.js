@@ -565,29 +565,29 @@ else{
                      dataValue.style.paddingTop = "10px"    
                      dataValue.style.width = "25%"
 
-                     var datavalue2 = document.createElement("div")
-                     datavalue2.innerHTML = testrequest["target"]
-                     datavalue2.style.textAlign = "center"
-                     datavalue2.style.display = "inline-block"
-                     datavalue2.style.backgroundColor = "skyblue"
-                     datavalue2.style.height = "40px"
-                     datavalue2.style.paddingTop = "10px"    
-                     datavalue2.style.width = "25%"
+                     var dataValue2 = document.createElement("div")
+                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.style.textAlign = "center"
+                     dataValue2.style.display = "inline-block"
+                     dataValue2.style.backgroundColor = "skyblue"
+                     dataValue2.style.height = "40px"
+                     dataValue2.style.paddingTop = "10px"    
+                     dataValue2.style.width = "25%"
 
-                     var datavalue3 = document.createElement("div")
-                     datavalue3.innerHTML = testrequest2["target"]
-                     datavalue3.style.textAlign = "center"
-                     datavalue3.style.display = "inline-block"
-                     datavalue3.style.backgroundColor = "skyblue"
-                     datavalue3.style.height = "40px"
-                     datavalue3.style.paddingTop = "10px"    
-                     datavalue3.style.width = "25%"
+                     var dataValue3 = document.createElement("div")
+                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.style.textAlign = "center"
+                     dataValue3.style.display = "inline-block"
+                     dataValue3.style.backgroundColor = "skyblue"
+                     dataValue3.style.height = "40px"
+                     dataValue3.style.paddingTop = "10px"    
+                     dataValue3.style.width = "25%"
 
                      var title = document.getElementById("mytable2")
                      title.appendChild(stockNumber)
                      title.appendChild(dataValue)
                      title.appendChild(dataValue2)
-                     title.appendChild(datavalue3)
+                     title.appendChild(dataValue3)
 
                    for(m=0;m<outcome.length;m++){
                      // alert("hi");
@@ -800,23 +800,23 @@ else{
  // dataValue.style.paddingTop = "10px"    
  // dataValue.style.width = "25%"
 
- // var datavalue2 = document.getElementById("table2")
- // datavalue2.innerHTML = testrequest["target"]
- // datavalue2.style.textAlign = "center"
- // datavalue2.style.display = "inline-block"
- // datavalue2.style.backgroundColor = "skyblue"
- // datavalue2.style.height = "40px"
- // datavalue2.style.paddingTop = "10px"    
- // datavalue2.style.width = "25%"
+ // var dataValue2 = document.getElementById("table2")
+ // dataValue2.innerHTML = testrequest["target"]
+ // dataValue2.style.textAlign = "center"
+ // dataValue2.style.display = "inline-block"
+ // dataValue2.style.backgroundColor = "skyblue"
+ // dataValue2.style.height = "40px"
+ // dataValue2.style.paddingTop = "10px"    
+ // dataValue2.style.width = "25%"
 
- // var datavalue3 = document.getElementById("table2")
- // datavalue3.innerHTML = testrequest2["target"]
- // datavalue3.style.textAlign = "center"
- // datavalue3.style.display = "inline-block"
- // datavalue3.style.backgroundColor = "skyblue"
- // datavalue3.style.height = "40px"
- // datavalue3.style.paddingTop = "10px"    
- // datavalue3.style.width = "25%"
+ // var dataValue3 = document.getElementById("table2")
+ // dataValue3.innerHTML = testrequest2["target"]
+ // dataValue3.style.textAlign = "center"
+ // dataValue3.style.display = "inline-block"
+ // dataValue3.style.backgroundColor = "skyblue"
+ // dataValue3.style.height = "40px"
+ // dataValue3.style.paddingTop = "10px"    
+ // dataValue3.style.width = "25%"
 
 
 }
