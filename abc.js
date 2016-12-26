@@ -566,7 +566,7 @@ else{
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "100%"
-
+                     newDiv.style.display = "inline-block"
                      var demo = document.getElementById(y["id"]);
 
                      demo.appendChild(newDiv);
@@ -574,7 +574,6 @@ else{
                       newDiv.appendChild(newContent);
                       var currentDiv = document.getElementById("div"); 
                       demo.insertBefore(newDiv, currentDiv);
-                      demo.style.display = "inline-block";
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
@@ -583,13 +582,14 @@ else{
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
                     newDiv2.style.height = "100%"
+                    newDiv2.style.display = "inline-block"
+
                     var demo2 = document.getElementById(y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
                     newDiv2.appendChild(newContent2);
                     var currentDiv2 = document.getElementById("div");
                     demo2.insertBefore(newDiv2, currentDiv2);   
-                    demo2.style.display = "inline-block";
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
@@ -598,13 +598,13 @@ else{
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
                     newDiv3.style.height = "100%"
+                    newDiv3.style.display = "inline-block"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(y["value1"])
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);   
-                    demo3.style.display = "inline-block";
 
                     var newDiv4 =document.createElement("button")
                     newDiv4.style.backgroundColor="papayawhip"
@@ -613,13 +613,13 @@ else{
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
                     newDiv4.style.height = "100%"
+                    newDiv4.style.display = "inline-block"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
                     var newContent4 = document.createTextNode(y["value2"])
                     newDiv4.appendChild(newContent4);
                     var currentDiv4 = document.getElementById("div");
                     demo4.insertBefore(newDiv4, currentDiv4);   
-                    demo4.style.display = "inline-block";
                 }
 }
 }
@@ -658,7 +658,7 @@ else{
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "100%"
-
+                     newDiv.style.display = "inline-block"
                      var demo = document.getElementById(y["id"]);
 
                      demo.appendChild(newDiv);
@@ -666,7 +666,6 @@ else{
                       newDiv.appendChild(newContent);
                       var currentDiv = document.getElementById("div"); 
                       demo.insertBefore(newDiv, currentDiv);
-                      demo.style.display = "inline-block";
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
@@ -681,7 +680,6 @@ else{
                     newDiv2.appendChild(newContent2);
                     var currentDiv2 = document.getElementById("div");
                     demo2.insertBefore(newDiv2, currentDiv2);   
-                    demo2.style.display = "inline-block";
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
@@ -696,7 +694,6 @@ else{
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);   
-                    demo3.style.display = "inline-block";
                     }
 
 }
