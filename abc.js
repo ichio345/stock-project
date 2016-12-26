@@ -1,5 +1,4 @@
-   
-    var startYear = "2013"
+      var startYear = "2013"
     var endYear = "2016"
 
     var csv = ".txt";
@@ -16,7 +15,7 @@
      var result2 = []
      var result3 = []
      var result4 = []
-
+     var outcome = []
     
     
     function getURL(request){
@@ -28,8 +27,7 @@
 
     }
 
-       
-    function search(){
+function search(){
         
     d3.csv( getURL(testrequest), 
 
@@ -43,7 +41,6 @@
     
 
 
-    if  (type > 0){
     var text1 =0
     
     var i;
@@ -85,24 +82,15 @@
                             }
                             else if (comparison ==2){
                                 if (average <= text){
-                                    result1.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
-                            }
-                                
-    }
-    
-    
-   
+                                    result1.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                        
+                                     }
+                            }  
 }
-
-
 console.log(result1)
 
 return result1
-}
 
-)
-
-
+//result2
 if(testrequest2.boolean==1){
      d3.csv( getURL(testrequest2), 
 
@@ -171,11 +159,7 @@ console.log(result2)
 }
 
 )
-
-}
-else{
-
-}
+//result3
 
 if(testrequest3.boolean == 1){
      d3.csv( getURL(testrequest3), 
@@ -247,10 +231,7 @@ console.log(result3)
 )
 
 
-}
-else{
-
-}
+//result4
 if(testrequest4.boolean == 1){
      d3.csv( getURL(testrequest4), 
 
@@ -322,6 +303,63 @@ console.log(result4)
 
 
 }
+}
+
+
+
+}
+
+
+if (result1.length > 0){
+for (i=0; i< result1.length ; i++){
+    var r1 = result1[i]
+    if(testrequest2.boolean == 1){
+    for (j=0;j<result2.length;j++){
+        var r2 =result2[j]
+        if (r1["id"]==r2["id"]){
+            if(testrequest3.boolean==1){
+            for(k=0;k<result3.length; k++){
+            var r3 = result3[k]
+            if(r1["id"]== r3["id"]){
+                if(testrequest4.boolean == 1){
+                for(l=0;l<result4.length;l++){
+                    var r4 = result4[l]
+                    if(r1["id"]=r4["id"]){
+                        outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
+                    }
+                }
+            }
+            else{
+                outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
+            }
+            }
+
+
+            
+        }
+        }
+        else{
+            outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
+        }
+        
+    }
+}
+}
+else {
+    outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
+}
+}
+console.log(outcome)
+
+}
+
+
+
+
+}
+
+)
+
 
 
 
@@ -452,50 +490,6 @@ console.log(result4)
 // demo2.insertBefore(newDiv2, currentDiv2);   
 // demo2.style.display = "inline-block";
 // }
-var go =1
-return result1 
-}
 
-var outcome = []
-if (search().length > 0){
-for (i=0; i< result1.length ; i++){
-    var r1 = result1[i]
-    if(testrequest2.boolean == 1){
-    for (j=0;j<result2.length;j++){
-        var r2 =result2[j]
-        if (r1["id"]==r2["id"]){
-            if(testrequest3.boolean==1){
-            for(k=0;k<result3.length; k++){
-            var r3 = result3[k]
-            if(r1["id"]== r3["id"]){
-                if(testrequest4.boolean == 1){
-                for(l=0;l<result4.length;l++){
-                    var r4 = result4[l]
-                    if(r1["id"]=r4["id"]){
-                        outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
-                    }
-                }
-            }
-            else{
-                outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
-            }
-            }
-
-
-            
-        }
-        }
-        else{
-            outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
-        }
-        
-    }
-}
-}
-else {
-    outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
-}
-}
-console.log(outcome)
 
 }
