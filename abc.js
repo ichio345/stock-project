@@ -555,13 +555,14 @@ else{
                      bigDiv.setAttribute("id", y["id"]);
                      var containerDiv = document.getElementById("mytable")
                      containerDiv.appendChild(bigDiv)
+                     bigDiv.style.width = "100%"
                     }
 
                     for(n=0;n<outcome.length;n++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
                      newDiv.style.backgroundColor = "Gainsboro";
-                     newDiv.style. width = "100%"
+                     newDiv.style. width = "25%"
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
@@ -577,7 +578,7 @@ else{
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
-                    newDiv2.style.width = "100%"
+                    newDiv2.style.width = "25%"
                     newDiv2.style.textAlign = "center"
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
@@ -593,7 +594,7 @@ else{
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
-                    newDiv3.style.width = "100%"
+                    newDiv3.style.width = "25%"
                     newDiv3.style.textAlign = "center"
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
@@ -608,7 +609,7 @@ else{
 
                     var newDiv4 =document.createElement("button")
                     newDiv4.style.backgroundColor="papayawhip"
-                    newDiv4.style.width = "100%"
+                    newDiv4.style.width = "25%"
                     newDiv4.style.textAlign = "center"
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
