@@ -28,7 +28,7 @@
     }
 
 function search(){
-        
+     //result1   
     d3.csv( getURL(testrequest), 
 
     function first(data1){
@@ -154,11 +154,8 @@ if(testrequest2.boolean==1){
 
 
 console.log(result2)
-}
 
-)
 //result3
-
 if(testrequest3.boolean == 1){
      d3.csv( getURL(testrequest3), 
 
@@ -224,10 +221,6 @@ if(testrequest3.boolean == 1){
 
 
 console.log(result3)
-}
-
-)
-
 
 //result4
 if(testrequest4.boolean == 1){
@@ -295,31 +288,16 @@ if(testrequest4.boolean == 1){
 
 
 console.log(result4)
-}
-
-)
 
 
-}
-}
-
-
-
-}
-
-
-if (result1.length > 0){
 for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
-    if(testrequest2.boolean == 1){
     for (j=0;j<result2.length;j++){
         var r2 =result2[j]
         if (r1["id"]==r2["id"]){
-            if(testrequest3.boolean==1){
             for(k=0;k<result3.length; k++){
             var r3 = result3[k]
             if(r1["id"]== r3["id"]){
-                if(testrequest4.boolean == 1){
                 for(l=0;l<result4.length;l++){
                     var r4 = result4[l]
                     if(r1["id"]=r4["id"]){
@@ -327,29 +305,74 @@ for (i=0; i< result1.length ; i++){
                     }
                 }
             }
-            else{
-                outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
-            }
-            }
+}
+}
+}
+}
+}
+
+)
 
 
-            
+}
+//if result4.boolean ==0
+else{for (i=0; i< result1.length ; i++){
+    var r1 = result1[i]
+    for (j=0;j<result2.length;j++){
+        var r2 =result2[j]
+        if (r1["id"]==r2["id"]){
+            for(k=0;k<result3.length; k++){
+            var r3 = result3[k]
+            if(r1["id"]== r3["id"]){
+                 outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
+            }
+            }
         }
         }
-        else{
+        }
+
+}
+
+}
+
+)
+
+
+
+}
+// if result3.boolean == 0
+else{
+    for (i=0; i< result1.length ; i++){
+    var r1 = result1[i]
+    for (j=0;j<result2.length;j++){
+        var r2 =result2[j]
+        if (r1["id"]==r2["id"]){
             outcome.push({id:r1["id"], companyName:r1["companyName"], value1: r1["value"],value2: r2["value"]})
         }
-        
-    }
+        }
+        }
 }
 }
-else {
+
+)
+
+
+
+
+
+}
+
+//if result2.boolean ==0
+else{
+    for(i=0; i< result1.length; i++){
+            var r1 = result1[i]
     outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
 }
 }
-console.log(outcome)
 
-}
+
+
+
 
 
 
