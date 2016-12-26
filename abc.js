@@ -565,7 +565,7 @@ else{
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
-                     newDiv.style.height = "100%"
+                     newDiv.style.height = "25%"
                      newDiv.style.display = "inline-block"
                      var demo = document.getElementById(y["id"]);
 
@@ -581,7 +581,7 @@ else{
                     newDiv2.style.textAlign = "center"
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
-                    newDiv2.style.height = "100%"
+                    newDiv2.style.height = "25%"
                     newDiv2.style.display = "inline-block"
 
                     var demo2 = document.getElementById(y["id"])
@@ -597,7 +597,7 @@ else{
                     newDiv3.style.textAlign = "center"
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
-                    newDiv3.style.height = "100%"
+                    newDiv3.style.height = "25%"
                     newDiv3.style.display = "inline-block"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
@@ -612,7 +612,7 @@ else{
                     newDiv4.style.textAlign = "center"
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
-                    newDiv4.style.height = "100%"
+                    newDiv4.style.height = "25%"
                     newDiv4.style.display = "inline-block"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
