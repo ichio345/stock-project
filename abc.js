@@ -1,4 +1,4 @@
-      var startYear = "2013"
+        var startYear = "2013"
     var endYear = "2016"
 
     var csv = ".txt";
@@ -232,8 +232,6 @@ if(testrequest4.boolean == 1){
     
     for(k=0; k<data4.length; k++){
         var x= data4[k];
-    
-
 
     if  (type > 0){
     var text1 =0
@@ -302,6 +300,7 @@ for (i=0; i< result1.length ; i++){
                     var r4 = result4[l]
                     if(r1["id"]=r4["id"]){
                         outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
+
                     }
                 }
             }
@@ -309,6 +308,8 @@ for (i=0; i< result1.length ; i++){
 }
 }
 }
+            console.log(outcome)
+
 }
 
 )
@@ -316,7 +317,8 @@ for (i=0; i< result1.length ; i++){
 
 }
 //if result4.boolean ==0
-else{for (i=0; i< result1.length ; i++){
+else{
+    for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
     for (j=0;j<result2.length;j++){
         var r2 =result2[j]
@@ -325,11 +327,13 @@ else{for (i=0; i< result1.length ; i++){
             var r3 = result3[k]
             if(r1["id"]== r3["id"]){
                  outcome.push({id:r1["id"], companyName:r1["companyName"] ,value1:r1["value"], value2:r2["value"], value3:r3["value"]})
+
             }
             }
         }
         }
         }
+            console.log(outcome)
 
 }
 
@@ -351,6 +355,8 @@ else{
         }
         }
         }
+                    console.log(outcome)
+
 }
 }
 
@@ -367,7 +373,10 @@ else{
     for(i=0; i< result1.length; i++){
             var r1 = result1[i]
     outcome.push({id:r1["id"], companyName:r1["companyName"],value1: r1["value"]})
+
 }
+            console.log(outcome)
+
 }
 
 
