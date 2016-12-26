@@ -7,7 +7,7 @@
     var comparison = 1
     var text = 2
     var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
-    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
+    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:0}
     var testrequest3 = {target:"DY", comparison:0, data:"20", boolean:0}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
     
@@ -682,24 +682,66 @@ else{
 
 }
             console.log(outcome)
-                          for(m=0;m<outcome.length;m++){
+                     var stockNumber = document.createElement("div")
+                     stockNumber.innerHTML = "股票代號";
+                     stockNumber.style.backgroundColor = "skyblue"
+                     stockNumber.style.textAlign = "center"
+                     stockNumber.style.display = "inline-block"
+                     stockNumber.style.height = "40px"
+                     stockNumber.style.paddingTop = "10px"
+                     stockNumber.style.width = "33%"
+                     var dataValue = document.createElement("div")
+                     dataValue.innerHTML = "公司名稱";
+                     dataValue.style.textAlign = "center"
+                     dataValue.style.display = "inline-block"
+                     dataValue.style.backgroundColor = "skyblue"
+                     dataValue.style.height = "40px"
+                     dataValue.style.paddingTop = "10px"    
+                     dataValue.style.width = "33%"
+
+                     var dataValue2 = document.createElement("div")
+                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.style.textAlign = "center"
+                     dataValue2.style.display = "inline-block"
+                     dataValue2.style.backgroundColor = "skyblue"
+                     dataValue2.style.height = "40px"
+                     dataValue2.style.paddingTop = "10px"    
+                     dataValue2.style.width = "33%"
+
+                     var dataValue3 = document.createElement("div")
+                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.style.textAlign = "center"
+                     dataValue3.style.display = "inline-block"
+                     dataValue3.style.backgroundColor = "skyblue"
+                     dataValue3.style.height = "40px"
+                     dataValue3.style.paddingTop = "10px"    
+                     dataValue3.style.width = "33%"
+
+                     var title = document.getElementById("mytable2")
+                     title.appendChild(stockNumber)
+                     title.appendChild(dataValue)
+                     title.appendChild(dataValue2)
+                     title.appendChild(dataValue3)
+
+                   for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
                      var bigDiv = document.createElement("div")
                      bigDiv.setAttribute("id", y["id"]);
-                     var containerDiv = document.getElementById("mytable")
+                     var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
+                     bigDiv.style.width = "100%"
                     }
 
                     for(n=0;n<outcome.length;n++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
                      newDiv.style.backgroundColor = "Gainsboro";
-                     newDiv.style. width = "100%"
+                     newDiv.style. width = "33%"
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
-                     newDiv.style.height = "100%"
+                     newDiv.style.height = "33%"
                      newDiv.style.display = "inline-block"
                      var demo = document.getElementById(y["id"]);
 
@@ -711,11 +753,13 @@ else{
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
-                    newDiv2.style.width = "100%"
+                    newDiv2.style.width = "33%"
                     newDiv2.style.textAlign = "center"
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
-                    newDiv2.style.height = "100%"
+                    newDiv2.style.height = "33%"
+                    newDiv2.style.display = "inline-block"
+
                     var demo2 = document.getElementById(y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
@@ -725,18 +769,19 @@ else{
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
-                    newDiv3.style.width = "100%"
+                    newDiv3.style.width = "33%"
                     newDiv3.style.textAlign = "center"
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
-                    newDiv3.style.height = "100%"
+                    newDiv3.style.height = "33%"
+                    newDiv3.style.display = "inline-block"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(y["value1"])
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
-                    demo3.insertBefore(newDiv3, currentDiv3);   
-                    }
+                    demo3.insertBefore(newDiv3, currentDiv3);
+                    }                      
 
 }
 
