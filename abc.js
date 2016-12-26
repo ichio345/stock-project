@@ -642,9 +642,6 @@ else{
 }
 
 )
-
-
-
 }
 // if result3.boolean == 0
 else{
@@ -777,11 +774,6 @@ else{
 }
 
 )
-
-
-
-
-
 }
 
 //if result2.boolean ==0
@@ -887,84 +879,6 @@ else{
                     }                      
 
 }
-
-
-
-
-
-
-
-
 }
-
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // for(z=0; z< result1.length; z++ ){
-// //     var rr = result1[z]
-    
-// //     outcome.push({id: parseInt(rr["id"]), companyName:rr["companyName"],value1: rr["value"]})
-
-// // }
-// // console.log(outcome);
-
-
-    
-
-
-
-
-
-
- 
- // var stockNumber = document.getElementById("table2")
- // stockNumber.innerHTML = "股票代號";
- // stockNumber.style.backgroundColor = "skyblue"
- // stockNumber.style.textAlign = "center"
- // stockNumber.style.display = "inline-block"
- // stockNumber.style.height = "40px"
- // stockNumber.style.paddingTop = "10px"
- // stockNumber.style.width = "25%"
- // var dataValue = document.getElementById("table2")
- // dataValue.innerHTML = "公司名稱";
- // dataValue.style.textAlign = "center"
- // dataValue.style.display = "inline-block"
- // dataValue.style.backgroundColor = "skyblue"
- // dataValue.style.height = "40px"
- // dataValue.style.paddingTop = "10px"    
- // dataValue.style.width = "25%"
-
- // var dataValue2 = document.getElementById("table2")
- // dataValue2.innerHTML = testrequest["target"]
- // dataValue2.style.textAlign = "center"
- // dataValue2.style.display = "inline-block"
- // dataValue2.style.backgroundColor = "skyblue"
- // dataValue2.style.height = "40px"
- // dataValue2.style.paddingTop = "10px"    
- // dataValue2.style.width = "25%"
-
- // var dataValue3 = document.getElementById("table2")
- // dataValue3.innerHTML = testrequest2["target"]
- // dataValue3.style.textAlign = "center"
- // dataValue3.style.display = "inline-block"
- // dataValue3.style.backgroundColor = "skyblue"
- // dataValue3.style.height = "40px"
- // dataValue3.style.paddingTop = "10px"    
- // dataValue3.style.width = "25%"
-
-
 }
