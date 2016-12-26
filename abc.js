@@ -7,7 +7,7 @@
     var comparison = 1
     var text = 2
     var testrequest = {target:"ATNI", comparison:1, data :"2", boolean:1}
-    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:0}
+    var testrequest2 = {target:"DR", comparison:2, data:"3", boolean:1}
     var testrequest3 = {target:"DY", comparison:0, data:"20", boolean:0}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
     
@@ -386,6 +386,8 @@ for (i=0; i< result1.length ; i++){
                     for(n=0;n<outcome.length;n++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
+                     var alpha = "sentID("+y["id"]+")";
+                     newDiv.setAttribute("onclick", alpha) ;                    
                      newDiv.style.backgroundColor = "Gainsboro";
                      newDiv.style. width = "16%"
                      newDiv.style.textAlign = "center"
@@ -567,6 +569,8 @@ else{
                     for(n=0;n<outcome.length;n++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
+                     var alpha = "sentID("+y["id"]+")";
+                     newDiv.setAttribute("onclick", alpha);                     
                      newDiv.style.backgroundColor = "Gainsboro";
                      newDiv.style. width = "20%"
                      newDiv.style.textAlign = "center"
@@ -718,6 +722,8 @@ else{
                     for(n=0;n<outcome.length;n++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
+                     var alpha = "sentID("+y["id"]+")"
+                     newDiv.setAttribute("onclick", alpha)                    
                      newDiv.style.backgroundColor = "Gainsboro";
                      newDiv.style. width = "25%"
                      newDiv.style.textAlign = "center"
