@@ -308,6 +308,65 @@ for (i=0; i< result1.length ; i++){
 }
 }
             console.log(outcome)
+                     var stockNumber = document.createElement("div")
+                     stockNumber.innerHTML = "股票代號";
+                     stockNumber.style.backgroundColor = "skyblue"
+                     stockNumber.style.textAlign = "center"
+                     stockNumber.style.display = "inline-block"
+                     stockNumber.style.height = "40px"
+                     stockNumber.style.paddingTop = "10px"
+                     stockNumber.style.width = "16%"
+                     var dataValue = document.createElement("div")
+                     dataValue.innerHTML = "公司名稱";
+                     dataValue.style.textAlign = "center"
+                     dataValue.style.display = "inline-block"
+                     dataValue.style.backgroundColor = "skyblue"
+                     dataValue.style.height = "40px"
+                     dataValue.style.paddingTop = "10px"    
+                     dataValue.style.width = "16%"
+
+                     var dataValue2 = document.createElement("div")
+                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.style.textAlign = "center"
+                     dataValue2.style.display = "inline-block"
+                     dataValue2.style.backgroundColor = "skyblue"
+                     dataValue2.style.height = "40px"
+                     dataValue2.style.paddingTop = "10px"    
+                     dataValue2.style.width = "16%"
+
+                     var dataValue3 = document.createElement("div")
+                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.style.textAlign = "center"
+                     dataValue3.style.display = "inline-block"
+                     dataValue3.style.backgroundColor = "skyblue"
+                     dataValue3.style.height = "40px"
+                     dataValue3.style.paddingTop = "10px"    
+                     dataValue3.style.width = "16%"
+
+                     var dataValue4 = document.createElement("div")
+                     dataValue4.innerHTML = testrequest3["target"]
+                     dataValue4.style.textAlign = "center"
+                     dataValue4.style.display = "inline-block"
+                     dataValue4.style.backgroundColor = "skyblue"
+                     dataValue4.style.height = "40px"
+                     dataValue4.style.paddingTop = "10px"    
+                     dataValue4.style.width = "16%"
+
+                     var dataValue5 = document.createElement("div")
+                     dataValue5.innerHTML = testrequest3["target"]
+                     dataValue5.style.textAlign = "center"
+                     dataValue5.style.display = "inline-block"
+                     dataValue5.style.backgroundColor = "skyblue"
+                     dataValue5.style.height = "40px"
+                     dataValue5.style.paddingTop = "10px"    
+                     dataValue5.style.width = "16%"
+                     var title = document.getElementById("mytable2")
+                     title.appendChild(stockNumber)
+                     title.appendChild(dataValue)
+                     title.appendChild(dataValue2)
+                     title.appendChild(dataValue3)
+                     title.appendChild(dataValue4)
+
                     for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
@@ -321,7 +380,7 @@ for (i=0; i< result1.length ; i++){
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
                      newDiv.style.backgroundColor = "Gainsboro";
-                     newDiv.style. width = "100%"
+                     newDiv.style. width = "16%"
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
@@ -338,7 +397,7 @@ for (i=0; i< result1.length ; i++){
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
-                    newDiv2.style.width = "100%"
+                    newDiv2.style.width = "16%"
                     newDiv2.style.textAlign = "center"
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
@@ -353,7 +412,7 @@ for (i=0; i< result1.length ; i++){
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
-                    newDiv3.style.width = "100%"
+                    newDiv3.style.width = "16%"
                     newDiv3.style.textAlign = "center"
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
@@ -368,7 +427,7 @@ for (i=0; i< result1.length ; i++){
 
                     var newDiv4 =document.createElement("button")
                     newDiv4.style.backgroundColor="papayawhip"
-                    newDiv4.style.width = "100%"
+                    newDiv4.style.width = "16%"
                     newDiv4.style.textAlign = "center"
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
@@ -383,7 +442,7 @@ for (i=0; i< result1.length ; i++){
 
                     var newDiv5 =document.createElement("button")
                     newDiv5.style.backgroundColor="papayawhip"
-                    newDiv5.style.width = "100%"
+                    newDiv5.style.width = "16%"
                     newDiv5.style.textAlign = "center"
                     newDiv5.style.borderStyle = "solid";
                     newDiv5.style.borderWidth = "1px";
@@ -398,7 +457,7 @@ for (i=0; i< result1.length ; i++){
 
                     var newDiv6 =document.createElement("button")
                     newDiv6.style.backgroundColor="papayawhip"
-                    newDiv6.style.width = "100%"
+                    newDiv6.style.width = "16%"
                     newDiv6.style.textAlign = "center"
                     newDiv6.style.borderStyle = "solid";
                     newDiv6.style.borderWidth = "1px";
@@ -436,7 +495,58 @@ else{
         }
         }
         }
-            console.log(outcome)
+                    console.log(outcome)
+                     var stockNumber = document.createElement("div")
+                     stockNumber.innerHTML = "股票代號";
+                     stockNumber.style.backgroundColor = "skyblue"
+                     stockNumber.style.textAlign = "center"
+                     stockNumber.style.display = "inline-block"
+                     stockNumber.style.height = "40px"
+                     stockNumber.style.paddingTop = "10px"
+                     stockNumber.style.width = "20%"
+                     var dataValue = document.createElement("div")
+                     dataValue.innerHTML = "公司名稱";
+                     dataValue.style.textAlign = "center"
+                     dataValue.style.display = "inline-block"
+                     dataValue.style.backgroundColor = "skyblue"
+                     dataValue.style.height = "40px"
+                     dataValue.style.paddingTop = "10px"    
+                     dataValue.style.width = "20%"
+
+                     var dataValue2 = document.createElement("div")
+                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.style.textAlign = "center"
+                     dataValue2.style.display = "inline-block"
+                     dataValue2.style.backgroundColor = "skyblue"
+                     dataValue2.style.height = "40px"
+                     dataValue2.style.paddingTop = "10px"    
+                     dataValue2.style.width = "20%"
+
+                     var dataValue3 = document.createElement("div")
+                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.style.textAlign = "center"
+                     dataValue3.style.display = "inline-block"
+                     dataValue3.style.backgroundColor = "skyblue"
+                     dataValue3.style.height = "40px"
+                     dataValue3.style.paddingTop = "10px"    
+                     dataValue3.style.width = "20%"
+
+                     var dataValue4 = document.createElement("div")
+                     dataValue4.innerHTML = testrequest3["target"]
+                     dataValue4.style.textAlign = "center"
+                     dataValue4.style.display = "inline-block"
+                     dataValue4.style.backgroundColor = "skyblue"
+                     dataValue4.style.height = "40px"
+                     dataValue4.style.paddingTop = "10px"    
+                     dataValue4.style.width = "20%"
+
+                     var title = document.getElementById("mytable2")
+                     title.appendChild(stockNumber)
+                     title.appendChild(dataValue)
+                     title.appendChild(dataValue2)
+                     title.appendChild(dataValue3)
+                     title.appendChild(dataValue4)
+
             for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
@@ -450,7 +560,7 @@ else{
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
                      newDiv.style.backgroundColor = "Gainsboro";
-                     newDiv.style. width = "100%"
+                     newDiv.style. width = "20%"
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
                      newDiv.style.borderWidth = "1px"
@@ -467,7 +577,7 @@ else{
                       //value1 display
                     var newDiv2 =document.createElement("button")
                     newDiv2.style.backgroundColor="papayawhip"
-                    newDiv2.style.width = "100%"
+                    newDiv2.style.width = "20%"
                     newDiv2.style.textAlign = "center"
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
@@ -482,7 +592,7 @@ else{
 
                      var newDiv3 =document.createElement("button")
                     newDiv3.style.backgroundColor="papayawhip"
-                    newDiv3.style.width = "100%"
+                    newDiv3.style.width = "20%"
                     newDiv3.style.textAlign = "center"
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
@@ -497,7 +607,7 @@ else{
 
                     var newDiv4 =document.createElement("button")
                     newDiv4.style.backgroundColor="papayawhip"
-                    newDiv4.style.width = "100%"
+                    newDiv4.style.width = "20%"
                     newDiv4.style.textAlign = "center"
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
@@ -512,7 +622,7 @@ else{
 
                     var newDiv5 =document.createElement("button")
                     newDiv5.style.backgroundColor="papayawhip"
-                    newDiv5.style.width = "100%"
+                    newDiv5.style.width = "20%"
                     newDiv5.style.textAlign = "center"
                     newDiv5.style.borderStyle = "solid";
                     newDiv5.style.borderWidth = "1px";
@@ -708,14 +818,7 @@ else{
                      dataValue2.style.paddingTop = "10px"    
                      dataValue2.style.width = "33%"
 
-                     var dataValue3 = document.createElement("div")
-                     dataValue3.innerHTML = testrequest2["target"]
-                     dataValue3.style.textAlign = "center"
-                     dataValue3.style.display = "inline-block"
-                     dataValue3.style.backgroundColor = "skyblue"
-                     dataValue3.style.height = "40px"
-                     dataValue3.style.paddingTop = "10px"    
-                     dataValue3.style.width = "33%"
+
 
                      var title = document.getElementById("mytable2")
                      title.appendChild(stockNumber)
