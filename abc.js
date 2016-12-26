@@ -308,6 +308,110 @@ for (i=0; i< result1.length ; i++){
 }
 }
             console.log(outcome)
+                    for(m=0;m<outcome.length;m++){
+                     // alert("hi");
+                     var y = outcome[m]
+                     var bigDiv = document.createElement("div")
+                     bigDiv.setAttribute("id", y["id"]);
+                     var containerDiv = document.getElementById("mytable")
+                     containerDiv.appendChild(bigDiv)
+                    }
+
+                    for(n=0;n<outcome.length;n++){
+                    var y = outcome[n]
+                     var newDiv = document.createElement("button"); 
+                     newDiv.style.backgroundColor = "Gainsboro";
+                     newDiv.style. width = "100%"
+                     newDiv.style.textAlign = "center"
+                     newDiv.style.borderStyle = "solid"
+                     newDiv.style.borderWidth = "1px"
+                     newDiv.style.height = "100%"
+
+                     var demo = document.getElementById(y["id"]);
+
+                     demo.appendChild(newDiv);
+                      var newContent = document.createTextNode(y["id"]); 
+                      newDiv.appendChild(newContent);
+                      var currentDiv = document.getElementById("div"); 
+                      demo.insertBefore(newDiv, currentDiv);
+                      demo.style.display = "inline-block";
+                      //value1 display
+                    var newDiv2 =document.createElement("button")
+                    newDiv2.style.backgroundColor="papayawhip"
+                    newDiv2.style.width = "100%"
+                    newDiv2.style.textAlign = "center"
+                    newDiv2.style.borderStyle = "solid";
+                    newDiv2.style.borderWidth = "1px";
+                    newDiv2.style.height = "100%"
+                    var demo2 = document.getElementById(y["id"])
+                    demo2.appendChild(newDiv2);
+                    var newContent2 = document.createTextNode(y["companyName"])
+                    newDiv2.appendChild(newContent2);
+                    var currentDiv2 = document.getElementById("div");
+                    demo2.insertBefore(newDiv2, currentDiv2);   
+                    demo2.style.display = "inline-block";
+
+                     var newDiv3 =document.createElement("button")
+                    newDiv3.style.backgroundColor="papayawhip"
+                    newDiv3.style.width = "100%"
+                    newDiv3.style.textAlign = "center"
+                    newDiv3.style.borderStyle = "solid";
+                    newDiv3.style.borderWidth = "1px";
+                    newDiv3.style.height = "100%"
+                    var demo3 = document.getElementById(y["id"])
+                    demo3.appendChild(newDiv3);
+                    var newContent3 = document.createTextNode(y["value1"])
+                    newDiv3.appendChild(newContent3);
+                    var currentDiv3 = document.getElementById("div");
+                    demo3.insertBefore(newDiv3, currentDiv3);   
+                    demo3.style.display = "inline-block";
+
+                    var newDiv4 =document.createElement("button")
+                    newDiv4.style.backgroundColor="papayawhip"
+                    newDiv4.style.width = "100%"
+                    newDiv4.style.textAlign = "center"
+                    newDiv4.style.borderStyle = "solid";
+                    newDiv4.style.borderWidth = "1px";
+                    newDiv4.style.height = "100%"
+                    var demo4 = document.getElementById(y["id"])
+                    demo4.appendChild(newDiv4);
+                    var newContent4 = document.createTextNode(y["value2"])
+                    newDiv4.appendChild(newContent4);
+                    var currentDiv4 = document.getElementById("div");
+                    demo4.insertBefore(newDiv4, currentDiv4);   
+                    demo4.style.display = "inline-block";
+
+                    var newDiv5 =document.createElement("button")
+                    newDiv5.style.backgroundColor="papayawhip"
+                    newDiv5.style.width = "100%"
+                    newDiv5.style.textAlign = "center"
+                    newDiv5.style.borderStyle = "solid";
+                    newDiv5.style.borderWidth = "1px";
+                    newDiv5.style.height = "100%"
+                    var demo5 = document.getElementById(y["id"])
+                    demo5.appendChild(newDiv5);
+                    var newContent5 = document.createTextNode(y["value3"])
+                    newDiv5.appendChild(newContent5);
+                    var currentDiv5 = document.getElementById("div");
+                    demo5.insertBefore(newDiv5, currentDiv5);   
+                    demo5.style.display = "inline-block";
+
+                    var newDiv6 =document.createElement("button")
+                    newDiv6.style.backgroundColor="papayawhip"
+                    newDiv6.style.width = "100%"
+                    newDiv6.style.textAlign = "center"
+                    newDiv6.style.borderStyle = "solid";
+                    newDiv6.style.borderWidth = "1px";
+                    newDiv6.style.height = "100%"
+                    var demo6 = document.getElementById(y["id"])
+                    demo6.appendChild(newDiv6);
+                    var newContent6 = document.createTextNode(y["value2"])
+                    newDiv6.appendChild(newContent6);
+                    var currentDiv6 = document.getElementById("div");
+                    demo6.insertBefore(newDiv6, currentDiv6);   
+                    demo6.style.display = "inline-block";                   
+
+                    }
 
 }
 
@@ -333,6 +437,95 @@ else{
         }
         }
             console.log(outcome)
+            for(m=0;m<outcome.length;m++){
+                     // alert("hi");
+                     var y = outcome[m]
+                     var bigDiv = document.createElement("div")
+                     bigDiv.setAttribute("id", y["id"]);
+                     var containerDiv = document.getElementById("mytable")
+                     containerDiv.appendChild(bigDiv)
+                    }
+
+                    for(n=0;n<outcome.length;n++){
+                    var y = outcome[n]
+                     var newDiv = document.createElement("button"); 
+                     newDiv.style.backgroundColor = "Gainsboro";
+                     newDiv.style. width = "100%"
+                     newDiv.style.textAlign = "center"
+                     newDiv.style.borderStyle = "solid"
+                     newDiv.style.borderWidth = "1px"
+                     newDiv.style.height = "100%"
+
+                     var demo = document.getElementById(y["id"]);
+
+                     demo.appendChild(newDiv);
+                      var newContent = document.createTextNode(y["id"]); 
+                      newDiv.appendChild(newContent);
+                      var currentDiv = document.getElementById("div"); 
+                      demo.insertBefore(newDiv, currentDiv);
+                      demo.style.display = "inline-block";
+                      //value1 display
+                    var newDiv2 =document.createElement("button")
+                    newDiv2.style.backgroundColor="papayawhip"
+                    newDiv2.style.width = "100%"
+                    newDiv2.style.textAlign = "center"
+                    newDiv2.style.borderStyle = "solid";
+                    newDiv2.style.borderWidth = "1px";
+                    newDiv2.style.height = "100%"
+                    var demo2 = document.getElementById(y["id"])
+                    demo2.appendChild(newDiv2);
+                    var newContent2 = document.createTextNode(y["companyName"])
+                    newDiv2.appendChild(newContent2);
+                    var currentDiv2 = document.getElementById("div");
+                    demo2.insertBefore(newDiv2, currentDiv2);   
+                    demo2.style.display = "inline-block";
+
+                     var newDiv3 =document.createElement("button")
+                    newDiv3.style.backgroundColor="papayawhip"
+                    newDiv3.style.width = "100%"
+                    newDiv3.style.textAlign = "center"
+                    newDiv3.style.borderStyle = "solid";
+                    newDiv3.style.borderWidth = "1px";
+                    newDiv3.style.height = "100%"
+                    var demo3 = document.getElementById(y["id"])
+                    demo3.appendChild(newDiv3);
+                    var newContent3 = document.createTextNode(y["value1"])
+                    newDiv3.appendChild(newContent3);
+                    var currentDiv3 = document.getElementById("div");
+                    demo3.insertBefore(newDiv3, currentDiv3);   
+                    demo3.style.display = "inline-block";
+
+                    var newDiv4 =document.createElement("button")
+                    newDiv4.style.backgroundColor="papayawhip"
+                    newDiv4.style.width = "100%"
+                    newDiv4.style.textAlign = "center"
+                    newDiv4.style.borderStyle = "solid";
+                    newDiv4.style.borderWidth = "1px";
+                    newDiv4.style.height = "100%"
+                    var demo4 = document.getElementById(y["id"])
+                    demo4.appendChild(newDiv4);
+                    var newContent4 = document.createTextNode(y["value2"])
+                    newDiv4.appendChild(newContent4);
+                    var currentDiv4 = document.getElementById("div");
+                    demo4.insertBefore(newDiv4, currentDiv4);   
+                    demo4.style.display = "inline-block";
+
+                    var newDiv5 =document.createElement("button")
+                    newDiv5.style.backgroundColor="papayawhip"
+                    newDiv5.style.width = "100%"
+                    newDiv5.style.textAlign = "center"
+                    newDiv5.style.borderStyle = "solid";
+                    newDiv5.style.borderWidth = "1px";
+                    newDiv5.style.height = "100%"
+                    var demo5 = document.getElementById(y["id"])
+                    demo5.appendChild(newDiv5);
+                    var newContent5 = document.createTextNode(y["value3"])
+                    newDiv5.appendChild(newContent5);
+                    var currentDiv5 = document.getElementById("div");
+                    demo5.insertBefore(newDiv5, currentDiv5);   
+                    demo5.style.display = "inline-block";
+                }
+
 
 }
 
@@ -355,7 +548,79 @@ else{
         }
         }
                     console.log(outcome)
+                   for(m=0;m<outcome.length;m++){
+                     // alert("hi");
+                     var y = outcome[m]
+                     var bigDiv = document.createElement("div")
+                     bigDiv.setAttribute("id", y["id"]);
+                     var containerDiv = document.getElementById("mytable")
+                     containerDiv.appendChild(bigDiv)
+                    }
 
+                    for(n=0;n<outcome.length;n++){
+                    var y = outcome[n]
+                     var newDiv = document.createElement("button"); 
+                     newDiv.style.backgroundColor = "Gainsboro";
+                     newDiv.style. width = "100%"
+                     newDiv.style.textAlign = "center"
+                     newDiv.style.borderStyle = "solid"
+                     newDiv.style.borderWidth = "1px"
+                     newDiv.style.height = "100%"
+
+                     var demo = document.getElementById(y["id"]);
+
+                     demo.appendChild(newDiv);
+                      var newContent = document.createTextNode(y["id"]); 
+                      newDiv.appendChild(newContent);
+                      var currentDiv = document.getElementById("div"); 
+                      demo.insertBefore(newDiv, currentDiv);
+                      demo.style.display = "inline-block";
+                      //value1 display
+                    var newDiv2 =document.createElement("button")
+                    newDiv2.style.backgroundColor="papayawhip"
+                    newDiv2.style.width = "100%"
+                    newDiv2.style.textAlign = "center"
+                    newDiv2.style.borderStyle = "solid";
+                    newDiv2.style.borderWidth = "1px";
+                    newDiv2.style.height = "100%"
+                    var demo2 = document.getElementById(y["id"])
+                    demo2.appendChild(newDiv2);
+                    var newContent2 = document.createTextNode(y["companyName"])
+                    newDiv2.appendChild(newContent2);
+                    var currentDiv2 = document.getElementById("div");
+                    demo2.insertBefore(newDiv2, currentDiv2);   
+                    demo2.style.display = "inline-block";
+
+                     var newDiv3 =document.createElement("button")
+                    newDiv3.style.backgroundColor="papayawhip"
+                    newDiv3.style.width = "100%"
+                    newDiv3.style.textAlign = "center"
+                    newDiv3.style.borderStyle = "solid";
+                    newDiv3.style.borderWidth = "1px";
+                    newDiv3.style.height = "100%"
+                    var demo3 = document.getElementById(y["id"])
+                    demo3.appendChild(newDiv3);
+                    var newContent3 = document.createTextNode(y["value1"])
+                    newDiv3.appendChild(newContent3);
+                    var currentDiv3 = document.getElementById("div");
+                    demo3.insertBefore(newDiv3, currentDiv3);   
+                    demo3.style.display = "inline-block";
+
+                    var newDiv4 =document.createElement("button")
+                    newDiv4.style.backgroundColor="papayawhip"
+                    newDiv4.style.width = "100%"
+                    newDiv4.style.textAlign = "center"
+                    newDiv4.style.borderStyle = "solid";
+                    newDiv4.style.borderWidth = "1px";
+                    newDiv4.style.height = "100%"
+                    var demo4 = document.getElementById(y["id"])
+                    demo4.appendChild(newDiv4);
+                    var newContent4 = document.createTextNode(y["value2"])
+                    newDiv4.appendChild(newContent4);
+                    var currentDiv4 = document.getElementById("div");
+                    demo4.insertBefore(newDiv4, currentDiv4);   
+                    demo4.style.display = "inline-block";
+                }
 }
 }
 
@@ -375,6 +640,64 @@ else{
 
 }
             console.log(outcome)
+                          for(m=0;m<outcome.length;m++){
+                     // alert("hi");
+                     var y = outcome[m]
+                     var bigDiv = document.createElement("div")
+                     bigDiv.setAttribute("id", y["id"]);
+                     var containerDiv = document.getElementById("mytable")
+                     containerDiv.appendChild(bigDiv)
+                    }
+
+                    for(n=0;n<outcome.length;n++){
+                    var y = outcome[n]
+                     var newDiv = document.createElement("button"); 
+                     newDiv.style.backgroundColor = "Gainsboro";
+                     newDiv.style. width = "100%"
+                     newDiv.style.textAlign = "center"
+                     newDiv.style.borderStyle = "solid"
+                     newDiv.style.borderWidth = "1px"
+                     newDiv.style.height = "100%"
+
+                     var demo = document.getElementById(y["id"]);
+
+                     demo.appendChild(newDiv);
+                      var newContent = document.createTextNode(y["id"]); 
+                      newDiv.appendChild(newContent);
+                      var currentDiv = document.getElementById("div"); 
+                      demo.insertBefore(newDiv, currentDiv);
+                      demo.style.display = "inline-block";
+                      //value1 display
+                    var newDiv2 =document.createElement("button")
+                    newDiv2.style.backgroundColor="papayawhip"
+                    newDiv2.style.width = "100%"
+                    newDiv2.style.textAlign = "center"
+                    newDiv2.style.borderStyle = "solid";
+                    newDiv2.style.borderWidth = "1px";
+                    newDiv2.style.height = "100%"
+                    var demo2 = document.getElementById(y["id"])
+                    demo2.appendChild(newDiv2);
+                    var newContent2 = document.createTextNode(y["companyName"])
+                    newDiv2.appendChild(newContent2);
+                    var currentDiv2 = document.getElementById("div");
+                    demo2.insertBefore(newDiv2, currentDiv2);   
+                    demo2.style.display = "inline-block";
+
+                     var newDiv3 =document.createElement("button")
+                    newDiv3.style.backgroundColor="papayawhip"
+                    newDiv3.style.width = "100%"
+                    newDiv3.style.textAlign = "center"
+                    newDiv3.style.borderStyle = "solid";
+                    newDiv3.style.borderWidth = "1px";
+                    newDiv3.style.height = "100%"
+                    var demo3 = document.getElementById(y["id"])
+                    demo3.appendChild(newDiv3);
+                    var newContent3 = document.createTextNode(y["value1"])
+                    newDiv3.appendChild(newContent3);
+                    var currentDiv3 = document.getElementById("div");
+                    demo3.insertBefore(newDiv3, currentDiv3);   
+                    demo3.style.display = "inline-block";
+                    }
 
 }
 
@@ -439,44 +762,6 @@ else{
 
 
 
-
-// alert(outcome.length)
-// for(m=0;m<outcome.length;m++){
-//  // alert("hi");
-//  var y = outcome[m]
-//  var newDiv = document.createElement("button"); 
-//  newDiv.setAttribute("id", y["id"]) ;
-//  newDiv.style.backgroundColor = "Gainsboro";
-//  newDiv.style. width = "100%"
-//  newDiv.style.textAlign = "center"
-//  newDiv.style.borderStyle = "solid"
-//  newDiv.style.borderWidth = "1px"
-//  newDiv.style.height = "100%"
-
-//   var demo = document.getElementById("mytable");
-
-//  demo.appendChild(newDiv);
-//   var newContent = document.createTextNode(y["id"]); 
-//   newDiv.appendChild(newContent);
-//   var currentDiv = document.getElementById("div"); 
-//   demo.insertBefore(newDiv, currentDiv);
-//   demo.style.display = "inline-block";
-//   //value display
-// var newDiv2 =document.createElement("button")
-// newDiv2.style.backgroundColor="papayawhip"
-// newDiv2.style.width = "100%"
-// newDiv2.style.textAlign = "center"
-// newDiv2.style.borderStyle = "solid";
-// newDiv2.style.borderWidth = "1px";
-// newDiv2.style.height = "100%"
-// var demo2 = document.getElementById("mytable2")
-// demo2.appendChild(newDiv2);
-// var newContent2 = document.createTextNode(y["value1"])
-// newDiv2.appendChild(newContent2);
-// var currentDiv2 = document.getElementById("div");
-// demo2.insertBefore(newDiv2, currentDiv2);   
-// demo2.style.display = "inline-block";
-// }
 
 
 }
