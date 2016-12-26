@@ -366,6 +366,7 @@ for (i=0; i< result1.length ; i++){
                      title.appendChild(dataValue2)
                      title.appendChild(dataValue3)
                      title.appendChild(dataValue4)
+                     title.appendChild(dataValue5)
 
                     for(m=0;m<outcome.length;m++){
                      // alert("hi");
@@ -816,7 +817,6 @@ else{
                      title.appendChild(stockNumber)
                      title.appendChild(dataValue)
                      title.appendChild(dataValue2)
-                     title.appendChild(dataValue3)
 
                    for(m=0;m<outcome.length;m++){
                      // alert("hi");
