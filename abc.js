@@ -88,8 +88,6 @@ function search(){
 }
 console.log(result1)
 
-return result1
-
 //result2
 if(testrequest2.boolean==1){
      d3.csv( getURL(testrequest2), 
