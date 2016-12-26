@@ -841,6 +841,7 @@ else{
                     var y = outcome[n]
                      var newDiv = document.createElement("button"); 
                      newDiv.style.backgroundColor = "Gainsboro";
+                     newDiv.setAttribute("onclick", "sentID(y[\"id\"])")
                      newDiv.style. width = "33%"
                      newDiv.style.textAlign = "center"
                      newDiv.style.borderStyle = "solid"
