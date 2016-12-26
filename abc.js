@@ -1,4 +1,4 @@
-        var startYear = "2013"
+    var startYear = "2013"
     var endYear = "2016"
 
     var csv = ".txt";
@@ -33,6 +33,7 @@
     }
 
 function search(){
+        var outcome = []
      //result1   
     d3.csv( getURL(testrequest), 
 
@@ -170,8 +171,6 @@ if(testrequest3.boolean == 1){
     for(k=0; k<data3.length; k++){
         var x= data3[k];
     
-
-
     if  (type > 0){
     var text1 =0
     
@@ -186,9 +185,6 @@ if(testrequest3.boolean == 1){
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
     var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
-    
-
-
     
         
     }
