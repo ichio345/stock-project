@@ -548,6 +548,41 @@ else{
         }
         }
                     console.log(outcome)
+                     var stockNumber = document.getElementById("table2")
+                     stockNumber.innerHTML = "股票代號";
+                     stockNumber.style.backgroundColor = "skyblue"
+                     stockNumber.style.textAlign = "center"
+                     stockNumber.style.display = "inline-block"
+                     stockNumber.style.height = "40px"
+                     stockNumber.style.paddingTop = "10px"
+                     stockNumber.style.width = "25%"
+                     var dataValue = document.getElementById("table2")
+                     dataValue.innerHTML = "公司名稱";
+                     dataValue.style.textAlign = "center"
+                     dataValue.style.display = "inline-block"
+                     dataValue.style.backgroundColor = "skyblue"
+                     dataValue.style.height = "40px"
+                     dataValue.style.paddingTop = "10px"    
+                     dataValue.style.width = "25%"
+
+                     var datavalue2 = document.getElementById("table2")
+                     datavalue2.innerHTML = testrequest["target"]
+                     datavalue2.style.textAlign = "center"
+                     datavalue2.style.display = "inline-block"
+                     datavalue2.style.backgroundColor = "skyblue"
+                     datavalue2.style.height = "40px"
+                     datavalue2.style.paddingTop = "10px"    
+                     datavalue2.style.width = "25%"
+
+                     var datavalue3 = document.getElementById("table2")
+                     datavalue3.innerHTML = testrequest2["target"]
+                     datavalue3.style.textAlign = "center"
+                     datavalue3.style.display = "inline-block"
+                     datavalue3.style.backgroundColor = "skyblue"
+                     datavalue3.style.height = "40px"
+                     datavalue3.style.paddingTop = "10px"    
+                     datavalue3.style.width = "25%"
+
                    for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
@@ -742,24 +777,40 @@ else{
 
 
  
-//  var stockNumber = document.getElementById("row1")
-//  stockNumber.innerHTML = "股票代號";
-//  stockNumber.style.backgroundColor = "skyblue"
-//  stockNumber.style.textAlign = "center"
-//  stockNumber.style.display = "inline-block"
-//  stockNumber.style.height = "40px"
-//  stockNumber.style.paddingTop = "10px"
-//  var dataValue = document.getElementById("row2")
-//  dataValue.innerHTML = testrequest["target"]
-//  dataValue.style.textAlign = "center"
-//  dataValue.style.display = "inline-block"
-//  dataValue.style.backgroundColor = "skyblue"
-//  dataValue.style.height = "40px"
-//  dataValue.style.paddingTop = "10px"    
+ // var stockNumber = document.getElementById("table2")
+ // stockNumber.innerHTML = "股票代號";
+ // stockNumber.style.backgroundColor = "skyblue"
+ // stockNumber.style.textAlign = "center"
+ // stockNumber.style.display = "inline-block"
+ // stockNumber.style.height = "40px"
+ // stockNumber.style.paddingTop = "10px"
+ // stockNumber.style.width = "25%"
+ // var dataValue = document.getElementById("table2")
+ // dataValue.innerHTML = "公司名稱";
+ // dataValue.style.textAlign = "center"
+ // dataValue.style.display = "inline-block"
+ // dataValue.style.backgroundColor = "skyblue"
+ // dataValue.style.height = "40px"
+ // dataValue.style.paddingTop = "10px"    
+ // dataValue.style.width = "25%"
 
+ // var datavalue2 = document.getElementById("table2")
+ // datavalue2.innerHTML = testrequest["target"]
+ // datavalue2.style.textAlign = "center"
+ // datavalue2.style.display = "inline-block"
+ // datavalue2.style.backgroundColor = "skyblue"
+ // datavalue2.style.height = "40px"
+ // datavalue2.style.paddingTop = "10px"    
+ // datavalue2.style.width = "25%"
 
-
-
+ // var datavalue3 = document.getElementById("table2")
+ // datavalue3.innerHTML = testrequest2["target"]
+ // datavalue3.style.textAlign = "center"
+ // datavalue3.style.display = "inline-block"
+ // datavalue3.style.backgroundColor = "skyblue"
+ // datavalue3.style.height = "40px"
+ // datavalue3.style.paddingTop = "10px"    
+ // datavalue3.style.width = "25%"
 
 
 }
