@@ -33,7 +33,7 @@
     }
 
 function search(){
-        var outcome = []
+     var outcome = []
      var result1 = []
      var result2 = []
      var result3 = []
