@@ -27,6 +27,11 @@
 
     }
 
+    function sentID(id){
+        alert(id);
+        return id 
+    }
+
 function search(){
      //result1   
     d3.csv( getURL(testrequest), 
@@ -702,6 +707,7 @@ else{
                      var y = outcome[m]
                      var bigDiv = document.createElement("div")
                      bigDiv.setAttribute("id", y["id"]);
+                     bigDiv.setAttribute("onclick", sentID(y["id"]))
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                      bigDiv.style.width = "100%"
