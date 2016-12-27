@@ -419,7 +419,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv3.style.height = "100%"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
-                    var newContent3 = document.createTextNode(y["value1"])
+                    var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);   
@@ -434,7 +434,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv4.style.height = "100%"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
-                    var newContent4 = document.createTextNode(y["value2"])
+                    var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
                     var currentDiv4 = document.getElementById("div");
                     demo4.insertBefore(newDiv4, currentDiv4);   
@@ -449,7 +449,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv5.style.height = "100%"
                     var demo5 = document.getElementById(y["id"])
                     demo5.appendChild(newDiv5);
-                    var newContent5 = document.createTextNode(y["value3"])
+                    var newContent5 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv5.appendChild(newContent5);
                     var currentDiv5 = document.getElementById("div");
                     demo5.insertBefore(newDiv5, currentDiv5);   
@@ -464,7 +464,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv6.style.height = "100%"
                     var demo6 = document.getElementById(y["id"])
                     demo6.appendChild(newDiv6);
-                    var newContent6 = document.createTextNode(y["value2"])
+                    var newContent6 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv6.appendChild(newContent6);
                     var currentDiv6 = document.getElementById("div");
                     demo6.insertBefore(newDiv6, currentDiv6);   
@@ -755,7 +755,7 @@ else{
                     newDiv3.style.display = "inline-block"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
-                    var newContent3 = document.createTextNode(y["value1"])
+                    var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);   
@@ -770,7 +770,7 @@ else{
                     newDiv4.style.display = "inline-block"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
-                    var newContent4 = document.createTextNode(y["value2"])
+                    var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
                     var currentDiv4 = document.getElementById("div");
                     demo4.insertBefore(newDiv4, currentDiv4);   
@@ -882,7 +882,7 @@ else{
                     newDiv3.style.display = "inline-block"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
-                    var newContent3 = document.createTextNode(y["value1"])
+                    var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);
