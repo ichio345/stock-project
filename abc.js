@@ -378,7 +378,7 @@ for (i=0; i< result1.length ; i++){
                      var y = outcome[m]
                      var bigDiv = document.createElement("div")
                      bigDiv.setAttribute("id", y["id"]);
-                     var containerDiv = document.getElementById("mytable")
+                     var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                     }
 
@@ -560,7 +560,7 @@ else{
                      var y = outcome[m]
                      var bigDiv = document.createElement("div")
                      bigDiv.setAttribute("id", y["id"]);
-                     var containerDiv = document.getElementById("mytable")
+                     var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                     }
 
