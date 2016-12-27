@@ -3,9 +3,7 @@
 
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
-    var type =1;
-    var comparison = 1
-    var text = 10
+
     var testrequest = {target:"NATPM", comparison:1, data :"2", boolean:1}
     var testrequest2 = {target:"ROE", comparison:2, data:"3", boolean:1}
     var testrequest3 = {target:"IT", comparison:1, data:"20", boolean:1}
@@ -84,13 +82,13 @@ function search(){
                     
                                 //function for >,<
                             if (comparison == 1){
-                            if (average >= text ){
+                            if (average >= testrequest.data ){
                                 result1.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
                             else if (comparison ==2){
-                                if (average <= text){
+                                if (average <= testrequest.data){
                                     result1.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                        
                                      }
                             }  
@@ -110,7 +108,6 @@ if(testrequest2.boolean==1){
     
 
 
-    if  (type > 0){
     var text1 =0
     
     var i;
@@ -144,21 +141,17 @@ if(testrequest2.boolean==1){
                     }
                     
                                 //function for >,<
-                            if (comparison == 1){
-                            if (average >= text ){
+                            if (testrequest2.comparison == 1){
+                            if (average >= testrequest2.data ){
                                 result2.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
-                            else if (comparison ==2){
-                                if (average <= text){
+                            else if (testrequest2.comparison ==2){
+                                if (average <= testrequest2.data){
                                     result2.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
                             }
                                 
-    }
-    
-    
-   
 }
 
 
@@ -175,7 +168,6 @@ if(testrequest3.boolean == 1){
     for(k=0; k<data3.length; k++){
         var x= data3[k];
     
-    if  (type > 0){
     var text1 =0
     
     var i;
@@ -206,18 +198,18 @@ if(testrequest3.boolean == 1){
                     }
                     
                                 //function for >,<
-                            if (comparison == 1){
-                            if (average >= text ){
+                            if (testrequest3.comparison == 1){
+                            if (average >= testrequest3.data ){
                                 result3.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
-                            else if (comparison ==2){
-                                if (average <= text){
+                            else if (testrequest3.comparison ==2){
+                                if (average <= testrequest3.data){
                                     result3.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
                             }
                                 
-    }
+    
     
     
    
@@ -237,7 +229,7 @@ if(testrequest4.boolean == 1){
     for(k=0; k<data4.length; k++){
         var x= data4[k];
 
-    if  (type > 0){
+
     var text1 =0
     
     var i;
@@ -271,18 +263,17 @@ if(testrequest4.boolean == 1){
                     }
                     
                                 //function for >,<
-                            if (comparison == 1){
-                            if (average >= text ){
+                            if (testrequest4.comparison == 1){
+                            if (average >= testrequest4.data ){
                                 result4.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
-                            else if (comparison ==2){
-                                if (average <= text){
+                            else if (testrequest4.comparison ==2){
+                                if (average <= testrequest4.data){
                                     result4.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                         }
                             }
                                 
-    }
     
     
    
