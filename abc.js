@@ -81,13 +81,13 @@ function search(){
                     }
                     
                                 //function for >,<
-                            if (comparison == 1){
+                            if (testrequest.comparison == 1){
                             if (average >= testrequest.data ){
                                 result1.push({id: parseInt(x["index"]) , companyName:x["company name"], value: average})
                             }
 
                             }
-                            else if (comparison ==2){
+                            else if (testrequest.comparison ==2){
                                 if (average <= testrequest.data){
                                     result1.push({id: parseInt(x["index"]) ,companyName:x["company name"], value: average})                        
                                      }
