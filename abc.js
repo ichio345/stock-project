@@ -7,7 +7,7 @@
     var comparison = 1
     var text = 10
     var testrequest = {target:"NATPM", comparison:1, data :"2", boolean:1}
-    var testrequest2 = {target:"ROE", comparison:2, data:"3", boolean:1}
+    var testrequest2 = {target:"ROE", comparison:2, data:"3", boolean:0}
     var testrequest3 = {target:"IT", comparison:0, data:"20", boolean:0}
     var testrequest4 = {target:"0", comparison:0,data:"3", boolean:0}
     
