@@ -617,7 +617,7 @@ else{
                     newDiv4.style.height = "100%"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
-                    var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100])
+                    var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
                     var currentDiv4 = document.getElementById("div");
                     demo4.insertBefore(newDiv4, currentDiv4);   
