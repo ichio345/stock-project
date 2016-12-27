@@ -602,7 +602,7 @@ else{
                     newDiv3.style.height = "100%"
                     var demo3 = document.getElementById(y["id"])
                     demo3.appendChild(newDiv3);
-                    var newContent3 = document.createTextNode(y["value1"])
+                    var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
                     var currentDiv3 = document.getElementById("div");
                     demo3.insertBefore(newDiv3, currentDiv3);   
@@ -617,7 +617,7 @@ else{
                     newDiv4.style.height = "100%"
                     var demo4 = document.getElementById(y["id"])
                     demo4.appendChild(newDiv4);
-                    var newContent4 = document.createTextNode(y["value2"])
+                    var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100])
                     newDiv4.appendChild(newContent4);
                     var currentDiv4 = document.getElementById("div");
                     demo4.insertBefore(newDiv4, currentDiv4);   
@@ -632,7 +632,7 @@ else{
                     newDiv5.style.height = "100%"
                     var demo5 = document.getElementById(y["id"])
                     demo5.appendChild(newDiv5);
-                    var newContent5 = document.createTextNode(y["value3"])
+                    var newContent5 = document.createTextNode(Math.round(y["value3"]*100)/100
                     newDiv5.appendChild(newContent5);
                     var currentDiv5 = document.getElementById("div");
                     demo5.insertBefore(newDiv5, currentDiv5);   
