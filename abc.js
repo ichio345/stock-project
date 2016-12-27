@@ -380,6 +380,7 @@ for (i=0; i< result1.length ; i++){
                      bigDiv.setAttribute("id", y["id"]);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
+                     bigDiv.style.width = "100%"
                     }
 
                     for(n=0;n<outcome.length;n++){
@@ -562,6 +563,7 @@ else{
                      bigDiv.setAttribute("id", y["id"]);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
+                     bigDiv.style.width = "100%"
                     }
 
                     for(n=0;n<outcome.length;n++){
