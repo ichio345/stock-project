@@ -28,11 +28,12 @@
     }
 
 function search(){
-    var ddd =  document.getElementById("mytable2");
-    delete ddd ;
+    var ddd =  document.getElementById("resultHere");
+    ddd.removeChild(document.getElementById("mytable2"))
     var fff =document.createElement("div")
     fff.setAttribute("id", "mytable2");
     fff.setAttribute("class", "col-md-12 col-xs-12 ");
+    ddd.appendChild(fff)
      var outcome = []
      var result1 = []
      var result2 = []
