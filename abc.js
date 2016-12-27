@@ -1,5 +1,5 @@
-    var startYear = document.getElementById("startyear").innerHTML
-    var endYear = document.getElementById("endyear").innerHTML
+    var startYear = document.getElementById("startyear").value + 2011
+    var endYear = document.getElementById("endyear").value + 2011
 
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
