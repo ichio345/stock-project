@@ -18,11 +18,8 @@
     
     function getURL(request){
         var filename = request.target 
-        var comparison = request.comparison
-        var text = request.data
         var dataURL = dataPath+filename+csv;
         return dataURL
-
     }
 
     function sentID(id){
