@@ -2,7 +2,7 @@
     var endYear = "2016"
 
     var csv = ".txt";
-    var dataPath = "https://ichio345.github.io/stock-project/";
+    var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
     var type =1;
     var comparison = 1
     var text = 2
