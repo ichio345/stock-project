@@ -28,6 +28,11 @@
     }
 
 function search(){
+    var ddd =  document.getElementById("mytable2");
+    delete ddd ;
+    var fff =document.createElement("div")
+    fff.setAttribute("id", "mytable2");
+    fff.setAttribute("class", "col-md-12 col-xs-12 ");
      var outcome = []
      var result1 = []
      var result2 = []
