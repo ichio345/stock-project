@@ -1,5 +1,4 @@
-    var startYear = parseInt( document.getElementById("startyear").value) + 2011
-    var endYear = parseInt( document.getElementById("endyear").value) + 2011
+
 
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
@@ -28,6 +27,8 @@
     }
 
 function search(){
+    var startYear = parseInt(document.getElementById("startyear").value) + 2011
+    var endYear = parseInt( document.getElementById("endyear").value) + 2011
     var ddd =  document.getElementById("resultHere");
     ddd.removeChild(document.getElementById("mytable2"))
     var fff =document.createElement("div")
@@ -780,7 +781,6 @@ else{
                 }
 }
 }
-
 )
 }
 
