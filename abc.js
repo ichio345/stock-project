@@ -3,15 +3,6 @@
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
 
-
-    var f1 = document.getElementById("form1")
-    var f2 = document.getElementById("form2")
-    var f3 = document.getElementById("form3")
-    var f4 = document.getElementById("form4")
-    var testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.checkValidity()}
-    var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:f2.checkValidity()}
-    var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:f3.checkValidity()}
-    var testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:f4.checkValidity()}
     
      var result1 = []
      var result2 = []
@@ -32,6 +23,14 @@
     }
 
 function search(){
+    var f1 = document.getElementById("form1")
+    var f2 = document.getElementById("form2")
+    var f3 = document.getElementById("form3")
+    var f4 = document.getElementById("form4")
+    var testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.checkValidity()}
+    var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:f2.checkValidity()}
+    var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:f3.checkValidity()}
+    var testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:f4.checkValidity()}
     var startYear = parseInt(document.getElementById("startyear").value) + 2011
     var endYear = parseInt( document.getElementById("endyear").value) + 2011
     var ddd =  document.getElementById("resultHere");
