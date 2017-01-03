@@ -3,10 +3,15 @@
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
 
-    var testrequest = {target:"PS", comparison:1, data :"1.5", boolean:1}
-    var testrequest2 = {target:"OP", comparison:1, data:"10", boolean:1}
-    var testrequest3 = {target:"PBR", comparison:2, data:"1.5", boolean:1}
-    var testrequest4 = {target:"ROE", comparison:1,data:"15", boolean:1}
+
+    var f1 = document.getElementById("form1")
+    var f2 = document.getElementById("form2")
+    var f3 = document.getElementById("form3")
+    var f4 = document.getElementById("form4")
+    var testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:!f1.checkValidity()}
+    var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:!f2.checkValidity()}
+    var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:!f3.checkValidity()}
+    var testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:!f4.checkValidity()}
     
      var result1 = []
      var result2 = []
@@ -50,7 +55,7 @@ function search(){
     for(k=0; k<data1.length; k++){
         var x= data1[k];
     
-    var text1 =0
+    var summary =0
     
     var i;
     //the function for endyear=2016
@@ -58,11 +63,11 @@ function search(){
     for (i=parseInt(startYear);i<=2015; i++){
         
         var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
-           text1  += parseInt(sum);
+           summary  += parseInt(sum);
     }
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
-    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    var average = (summary+value2016)/((2015-parseInt(startYear)+1)*4+3)
     }
                 //the function for endyear is not 2016
 
@@ -71,9 +76,9 @@ function search(){
                     
                     sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
                     
-                    text1 += parseInt(sum) ;
+                    summary += parseInt(sum) ;
                     }
-                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    var average = summary/((parseInt(endYear)-parseInt(startYear)+1)*4)
                     
                     }
                     
@@ -93,7 +98,7 @@ function search(){
 console.log(result1)
 
 //result2
-if(testrequest2.boolean==1){
+if(testrequest2.searchable==true){
      d3.csv( getURL(testrequest2), 
 
     function (data2){
@@ -102,7 +107,7 @@ if(testrequest2.boolean==1){
     
     for(k=0; k<data2.length; k++){
         var x= data2[k];
-    var text1 =0
+    var summary =0
     
     var i;
     //the function for endyear=2016
@@ -110,11 +115,11 @@ if(testrequest2.boolean==1){
     for (i=parseInt(startYear);i<=2015; i++){
         
         var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
-           text1  += parseInt(sum);
+           summary  += parseInt(sum);
     }
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
-    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    var average = (summary+value2016)/((2015-parseInt(startYear)+1)*4+3)
     }
                 //the function for endyear is not 2016
 
@@ -123,9 +128,9 @@ if(testrequest2.boolean==1){
                     
                     sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
                     
-                    text1 += parseInt(sum) ;
+                    summary += parseInt(sum) ;
                     }
-                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    var average = summary/((parseInt(endYear)-parseInt(startYear)+1)*4)
                     
                     }
                     
@@ -147,7 +152,7 @@ if(testrequest2.boolean==1){
 console.log(result2)
 
 //result3
-if(testrequest3.boolean == 1){
+if(testrequest3.searchable == true){
      d3.csv( getURL(testrequest3), 
 
     function (data3){
@@ -157,7 +162,7 @@ if(testrequest3.boolean == 1){
     for(k=0; k<data3.length; k++){
         var x= data3[k];
     
-    var text1 =0
+    var summary =0
     
     var i;
     //the function for endyear=2016
@@ -165,11 +170,11 @@ if(testrequest3.boolean == 1){
     for (i=parseInt(startYear);i<=2015; i++){
         
         var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
-           text1  += parseInt(sum);
+           summary  += parseInt(sum);
     }
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
-    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    var average = (summary+value2016)/((2015-parseInt(startYear)+1)*4+3)
     
         
     }
@@ -180,9 +185,9 @@ if(testrequest3.boolean == 1){
                     
                     sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
                     
-                    text1 += parseInt(sum) ;
+                    summary += parseInt(sum) ;
                     }
-                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    var average = summary/((parseInt(endYear)-parseInt(startYear)+1)*4)
                     
                     }
                     
@@ -208,7 +213,7 @@ if(testrequest3.boolean == 1){
 console.log(result3)
 
 //result4
-if(testrequest4.boolean == 1){
+if(testrequest4.searchable == true){
      d3.csv( getURL(testrequest4), 
 
     function (data4){
@@ -219,7 +224,7 @@ if(testrequest4.boolean == 1){
         var x= data4[k];
 
 
-    var text1 =0
+    var summary =0
     
     var i;
     //the function for endyear=2016
@@ -227,11 +232,11 @@ if(testrequest4.boolean == 1){
     for (i=parseInt(startYear);i<=2015; i++){
         
         var sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
-           text1  += parseInt(sum);
+           summary  += parseInt(sum);
     }
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
-    var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
+    var average = (summary+value2016)/((2015-parseInt(startYear)+1)*4+3)
     
 
 
@@ -245,9 +250,9 @@ if(testrequest4.boolean == 1){
                     
                     sum = parseInt(x[i+"Q1"])+ parseInt(x[i+"Q2"])+parseInt(x[i+"Q3"])+parseInt(x[i+"Q4"])
                     
-                    text1 += parseInt(sum) ;
+                    summary += parseInt(sum) ;
                     }
-                    var average = text1/((parseInt(endYear)-parseInt(startYear)+1)*4)
+                    var average = summary/((parseInt(endYear)-parseInt(startYear)+1)*4)
                     
                     }
                     
@@ -467,7 +472,7 @@ for (i=0; i< result1.length ; i++){
 
 
 }
-//if result4.boolean ==0
+//if result4.searchable ==0
 else{
     for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
@@ -635,7 +640,7 @@ else{
 
 )
 }
-// if result3.boolean == 0
+// if result3.searchable == 0
 else{
     for (i=0; i< result1.length ; i++){
     var r1 = result1[i]
@@ -769,7 +774,7 @@ else{
 )
 }
 
-//if result2.boolean ==0
+//if result2.searchable ==0
 else{
     for(i=0; i< result1.length; i++){
             var r1 = result1[i]
