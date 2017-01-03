@@ -297,7 +297,7 @@ for (i=0; i< result1.length ; i++){
             if(r1["id"]== r3["id"]){
                 for(l=0;l<result4.length;l++){
                     var r4 = result4[l]
-                    if(r1["id"]=r4["id"]){
+                    if(r1["id"]==r4["id"]){
                         outcome.push({id: r1["id"], companyName:r1["companyName"], value1: r1["value"], value2: r2["value"], value3: r3["value"], value4:r4["value"]})
 
                     }
