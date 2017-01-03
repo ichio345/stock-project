@@ -3,8 +3,8 @@
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
 
-    var testrequest = {target:"OP", comparison:1, data :"10", boolean:1}
-    var testrequest2 = {target:"PS", comparison:1, data:"1.5", boolean:1}
+    var testrequest = {target:"PS", comparison:1, data :"1.5", boolean:1}
+    var testrequest2 = {target:"OP", comparison:1, data:"10", boolean:1}
     var testrequest3 = {target:"PBR", comparison:2, data:"1.5", boolean:1}
     var testrequest4 = {target:"ROE", comparison:1,data:"15", boolean:1}
     
@@ -50,8 +50,6 @@ function search(){
     for(k=0; k<data1.length; k++){
         var x= data1[k];
     
-
-
     var text1 =0
     
     var i;
@@ -65,11 +63,6 @@ function search(){
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
     var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
-    
-
-
-    
-        
     }
                 //the function for endyear is not 2016
 
@@ -109,9 +102,6 @@ if(testrequest2.boolean==1){
     
     for(k=0; k<data2.length; k++){
         var x= data2[k];
-    
-
-
     var text1 =0
     
     var i;
@@ -125,11 +115,6 @@ if(testrequest2.boolean==1){
     var value2016 =parseInt(x["2016Q1"])+parseInt(x["2016Q2"])+parseInt(x["2016Q3"])
 
     var average = (text1+value2016)/((2015-parseInt(startYear)+1)*4+3)
-    
-
-
-    
-        
     }
                 //the function for endyear is not 2016
 
@@ -453,7 +438,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv5.style.height = "100%"
                     var demo5 = document.getElementById(y["id"])
                     demo5.appendChild(newDiv5);
-                    var newContent5 = document.createTextNode(Math.round(y["value1"]*100)/100)
+                    var newContent5 = document.createTextNode(Math.round(y["value3"]*100)/100)
                     newDiv5.appendChild(newContent5);
                     var currentDiv5 = document.getElementById("div");
                     demo5.insertBefore(newDiv5, currentDiv5);   
@@ -468,7 +453,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv6.style.height = "100%"
                     var demo6 = document.getElementById(y["id"])
                     demo6.appendChild(newDiv6);
-                    var newContent6 = document.createTextNode(Math.round(y["value1"]*100)/100)
+                    var newContent6 = document.createTextNode(Math.round(y["value4"]*100)/100)
                     newDiv6.appendChild(newContent6);
                     var currentDiv6 = document.getElementById("div");
                     demo6.insertBefore(newDiv6, currentDiv6);   
