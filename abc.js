@@ -2,6 +2,10 @@
 
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
+    var f1 = document.getElementById("form1")
+    var f2 = document.getElementById("form2")
+    var f3 = document.getElementById("form3")
+    var f4 = document.getElementById("form4")
     var testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.checkValidity()}
     var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:f2.checkValidity()}
     var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:f3.checkValidity()}
@@ -27,10 +31,6 @@
     }
 
 function search(){
-    var f1 = document.getElementById("form1")
-    var f2 = document.getElementById("form2")
-    var f3 = document.getElementById("form3")
-    var f4 = document.getElementById("form4")
     testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:data!=""}
     testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:data!=""}
     testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:data!=""}
