@@ -3,10 +3,10 @@
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
 
-    var testrequest = {target:"NATPM", comparison:1, data :"2", boolean:1}
-    var testrequest2 = {target:"ROE", comparison:2, data:"3", boolean:1}
-    var testrequest3 = {target:"IT", comparison:1, data:"20", boolean:1}
-    var testrequest4 = {target:"", comparison:0,data:"3", boolean:0}
+    var testrequest = {target:"EPS", comparison:1, data :"1", boolean:1}
+    var testrequest2 = {target:"PS", comparison:1, data:"1.5", boolean:1}
+    var testrequest3 = {target:"PBR", comparison:2, data:"1.5", boolean:1}
+    var testrequest4 = {target:"ROE", comparison:1,data:"15", boolean:1}
     
      var result1 = []
      var result2 = []
