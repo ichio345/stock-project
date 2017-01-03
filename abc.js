@@ -353,7 +353,7 @@ for (i=0; i< result1.length ; i++){
                      dataValue4.style.width = "16%"
 
                      var dataValue5 = document.createElement("div")
-                     dataValue5.innerHTML = testrequest3["target"]
+                     dataValue5.innerHTML = testrequest4["target"]
                      dataValue5.style.textAlign = "center"
                      dataValue5.style.display = "inline-block"
                      dataValue5.style.backgroundColor = "skyblue"
