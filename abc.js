@@ -31,10 +31,10 @@
     }
 
 function search(){
-    testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:data!=""}
-    testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:data!=""}
-    testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:data!=""}
-    testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:data!=""}
+    testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:this.data!=""}
+    testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:this.data!=""}
+    testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:this.data!=""}
+    testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:this.data!=""}
     var startYear = parseInt(document.getElementById("startyear").value) + 2011
     var endYear = parseInt( document.getElementById("endyear").value) + 2011
     var ddd =  document.getElementById("resultHere");
