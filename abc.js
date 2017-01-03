@@ -3,7 +3,7 @@
     var csv = ".txt";
     var dataPath = "https://cocoflyliu.github.io/stock_crawler/data/";
 
-    var testrequest = {target:"EPS", comparison:1, data :"1", boolean:1}
+    var testrequest = {target:"OP", comparison:1, data :"10", boolean:1}
     var testrequest2 = {target:"PS", comparison:1, data:"1.5", boolean:1}
     var testrequest3 = {target:"PBR", comparison:2, data:"1.5", boolean:1}
     var testrequest4 = {target:"ROE", comparison:1,data:"15", boolean:1}
