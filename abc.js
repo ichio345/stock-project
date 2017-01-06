@@ -476,7 +476,7 @@ for (i=0; i< result1.length ; i++){
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "100%"
 
-                     var demo = document.getElementById(y["id"]);
+                     var demo = document.getElementById("s"+y["id"]);
 
                      demo.appendChild(newDiv);
                       var newContent = document.createTextNode(y["id"]); 
@@ -492,7 +492,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
                     newDiv2.style.height = "100%"
-                    var demo2 = document.getElementById(y["id"])
+                    var demo2 = document.getElementById("s"+y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
                     newDiv2.appendChild(newContent2);
@@ -507,7 +507,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
                     newDiv3.style.height = "100%"
-                    var demo3 = document.getElementById(y["id"])
+                    var demo3 = document.getElementById("s"+y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
@@ -522,7 +522,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
                     newDiv4.style.height = "100%"
-                    var demo4 = document.getElementById(y["id"])
+                    var demo4 = document.getElementById("s"+y["id"])
                     demo4.appendChild(newDiv4);
                     var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
@@ -537,7 +537,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv5.style.borderStyle = "solid";
                     newDiv5.style.borderWidth = "1px";
                     newDiv5.style.height = "100%"
-                    var demo5 = document.getElementById(y["id"])
+                    var demo5 = document.getElementById("s"+y["id"])
                     demo5.appendChild(newDiv5);
                     var newContent5 = document.createTextNode(Math.round(y["value3"]*100)/100)
                     newDiv5.appendChild(newContent5);
@@ -552,7 +552,7 @@ for (i=0; i< result1.length ; i++){
                     newDiv6.style.borderStyle = "solid";
                     newDiv6.style.borderWidth = "1px";
                     newDiv6.style.height = "100%"
-                    var demo6 = document.getElementById(y["id"])
+                    var demo6 = document.getElementById("s"+y["id"])
                     demo6.appendChild(newDiv6);
                     var newContent6 = document.createTextNode(Math.round(y["value4"]*100)/100)
                     newDiv6.appendChild(newContent6);
@@ -660,7 +660,7 @@ else{
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "100%"
 
-                     var demo = document.getElementById(y["id"]);
+                     var demo = document.getElementById("s"+y["id"]);
 
                      demo.appendChild(newDiv);
                       var newContent = document.createTextNode(y["id"]); 
@@ -676,7 +676,7 @@ else{
                     newDiv2.style.borderStyle = "solid";
                     newDiv2.style.borderWidth = "1px";
                     newDiv2.style.height = "100%"
-                    var demo2 = document.getElementById(y["id"])
+                    var demo2 = document.getElementById("s"+y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
                     newDiv2.appendChild(newContent2);
@@ -691,7 +691,7 @@ else{
                     newDiv3.style.borderStyle = "solid";
                     newDiv3.style.borderWidth = "1px";
                     newDiv3.style.height = "100%"
-                    var demo3 = document.getElementById(y["id"])
+                    var demo3 = document.getElementById("s"+y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
@@ -706,7 +706,7 @@ else{
                     newDiv4.style.borderStyle = "solid";
                     newDiv4.style.borderWidth = "1px";
                     newDiv4.style.height = "100%"
-                    var demo4 = document.getElementById(y["id"])
+                    var demo4 = document.getElementById("s"+y["id"])
                     demo4.appendChild(newDiv4);
                     var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
@@ -721,7 +721,7 @@ else{
                     newDiv5.style.borderStyle = "solid";
                     newDiv5.style.borderWidth = "1px";
                     newDiv5.style.height = "100%"
-                    var demo5 = document.getElementById(y["id"])
+                    var demo5 = document.getElementById("s"+y["id"])
                     demo5.appendChild(newDiv5);
                     var newContent5 = document.createTextNode(Math.round(y["value3"]*100)/100)
                     newDiv5.appendChild(newContent5);
@@ -813,7 +813,7 @@ else{
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "25%"
                      newDiv.style.display = "inline-block"
-                     var demo = document.getElementById(y["id"]);
+                     var demo = document.getElementById("s"+y["id"]);
 
                      demo.appendChild(newDiv);
                       var newContent = document.createTextNode(y["id"]); 
@@ -830,7 +830,7 @@ else{
                     newDiv2.style.height = "25%"
                     newDiv2.style.display = "inline-block"
 
-                    var demo2 = document.getElementById(y["id"])
+                    var demo2 = document.getElementById("s"+y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
                     newDiv2.appendChild(newContent2);
@@ -845,7 +845,7 @@ else{
                     newDiv3.style.borderWidth = "1px";
                     newDiv3.style.height = "25%"
                     newDiv3.style.display = "inline-block"
-                    var demo3 = document.getElementById(y["id"])
+                    var demo3 = document.getElementById("s"+y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
@@ -860,7 +860,7 @@ else{
                     newDiv4.style.borderWidth = "1px";
                     newDiv4.style.height = "25%"
                     newDiv4.style.display = "inline-block"
-                    var demo4 = document.getElementById(y["id"])
+                    var demo4 = document.getElementById("s"+y["id"])
                     demo4.appendChild(newDiv4);
                     var newContent4 = document.createTextNode(Math.round(y["value2"]*100)/100)
                     newDiv4.appendChild(newContent4);
@@ -939,7 +939,7 @@ else{
                      newDiv.style.borderWidth = "1px"
                      newDiv.style.height = "33%"
                      newDiv.style.display = "inline-block"
-                     var demo = document.getElementById(y["id"]);
+                     var demo = document.getElementById("s"+y["id"]);
 
                      demo.appendChild(newDiv);
                       var newContent = document.createTextNode(y["id"]); 
@@ -956,7 +956,7 @@ else{
                     newDiv2.style.height = "33%"
                     newDiv2.style.display = "inline-block"
 
-                    var demo2 = document.getElementById(y["id"])
+                    var demo2 = document.getElementById("s"+y["id"])
                     demo2.appendChild(newDiv2);
                     var newContent2 = document.createTextNode(y["companyName"])
                     newDiv2.appendChild(newContent2);
@@ -971,7 +971,7 @@ else{
                     newDiv3.style.borderWidth = "1px";
                     newDiv3.style.height = "33%"
                     newDiv3.style.display = "inline-block"
-                    var demo3 = document.getElementById(y["id"])
+                    var demo3 = document.getElementById("s"+y["id"])
                     demo3.appendChild(newDiv3);
                     var newContent3 = document.createTextNode(Math.round(y["value1"]*100)/100)
                     newDiv3.appendChild(newContent3);
