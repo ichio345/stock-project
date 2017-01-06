@@ -409,7 +409,7 @@ for (i=0; i< result1.length ; i++){
                      dataValue.style.width = "16%"
 
                      var dataValue2 = document.createElement("div")
-                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.innerHTML = display(testrequest["target"])
                      dataValue2.style.textAlign = "center"
                      dataValue2.style.display = "inline-block"
                      dataValue2.style.backgroundColor = "skyblue"
@@ -418,7 +418,7 @@ for (i=0; i< result1.length ; i++){
                      dataValue2.style.width = "16%"
 
                      var dataValue3 = document.createElement("div")
-                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.innerHTML = display(testrequest2["target"])
                      dataValue3.style.textAlign = "center"
                      dataValue3.style.display = "inline-block"
                      dataValue3.style.backgroundColor = "skyblue"
@@ -427,7 +427,7 @@ for (i=0; i< result1.length ; i++){
                      dataValue3.style.width = "16%"
 
                      var dataValue4 = document.createElement("div")
-                     dataValue4.innerHTML = testrequest3["target"]
+                     dataValue4.innerHTML = display(testrequest3["target"])
                      dataValue4.style.textAlign = "center"
                      dataValue4.style.display = "inline-block"
                      dataValue4.style.backgroundColor = "skyblue"
@@ -436,7 +436,7 @@ for (i=0; i< result1.length ; i++){
                      dataValue4.style.width = "16%"
 
                      var dataValue5 = document.createElement("div")
-                     dataValue5.innerHTML = testrequest4["target"]
+                     dataValue5.innerHTML = display(testrequest4["target"])
                      dataValue5.style.textAlign = "center"
                      dataValue5.style.display = "inline-block"
                      dataValue5.style.backgroundColor = "skyblue"
@@ -601,7 +601,7 @@ else{
                      dataValue.style.width = "20%"
 
                      var dataValue2 = document.createElement("div")
-                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.innerHTML = display(testrequest["target"])
                      dataValue2.style.textAlign = "center"
                      dataValue2.style.display = "inline-block"
                      dataValue2.style.backgroundColor = "skyblue"
@@ -610,7 +610,7 @@ else{
                      dataValue2.style.width = "20%"
 
                      var dataValue3 = document.createElement("div")
-                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.innerHTML = display(testrequest2["target"])
                      dataValue3.style.textAlign = "center"
                      dataValue3.style.display = "inline-block"
                      dataValue3.style.backgroundColor = "skyblue"
@@ -619,7 +619,7 @@ else{
                      dataValue3.style.width = "20%"
 
                      var dataValue4 = document.createElement("div")
-                     dataValue4.innerHTML = testrequest3["target"]
+                     dataValue4.innerHTML = display(testrequest3["target"])
                      dataValue4.style.textAlign = "center"
                      dataValue4.style.display = "inline-block"
                      dataValue4.style.backgroundColor = "skyblue"
@@ -763,7 +763,7 @@ else{
                      dataValue.style.width = "25%"
 
                      var dataValue2 = document.createElement("div")
-                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.innerHTML = display(testrequest["target"])
                      dataValue2.style.textAlign = "center"
                      dataValue2.style.display = "inline-block"
                      dataValue2.style.backgroundColor = "skyblue"
@@ -772,7 +772,7 @@ else{
                      dataValue2.style.width = "25%"
 
                      var dataValue3 = document.createElement("div")
-                     dataValue3.innerHTML = testrequest2["target"]
+                     dataValue3.innerHTML = display(testrequest2["target"])
                      dataValue3.style.textAlign = "center"
                      dataValue3.style.display = "inline-block"
                      dataValue3.style.backgroundColor = "skyblue"
