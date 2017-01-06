@@ -20,15 +20,24 @@
     
     
     function getURL(request){
-        var filename = request.target 
+        var filename = request.target
         var dataURL = dataPath+filename+csv;
         return dataURL
     }
+
 
     function sentID(id){
         alert(id);
         return id 
     }
+    function clear(){
+    document.getElementById("form1").reset();
+    document.getElementById("form2").reset();
+    document.getElementById("form3").reset();
+    document.getElementById("form4").reset();
+    var ddd =  document.getElementById("resultHere");
+    ddd.removeChild(document.getElementById("mytable2"))
+}
 
 function search(){
     testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.text1.value!=""}
