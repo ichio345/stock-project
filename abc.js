@@ -97,17 +97,19 @@
     // })
 
 function sentID(id){ 
+    var ic = "s"+id
+    alert(ic)
     if (testrequest.searchable==true){
-        singlestock(id);
+        singlestock(ic);
     }
     if (testrequest2.searchable==true){
-        singlestock2(id);
+        singlestock2(ic);
     }
     if (testrequest3.searchable==true){
-        singlestock3(id);
+        singlestock3(ic);
     }
     if (testrequest4.searchable==true){
-        singlestock4(id);
+        singlestock4(ic);
     }
 };
     function clear(){
