@@ -984,3 +984,34 @@ else{
 )
 }
 }
+
+function onClickCo(){
+    var aCompany=2330;
+    //getElementById("form5").company1;
+    var bCompany=8069;
+    //getElementById("form5").company2;
+    var coEffNum=getCo(aCompany,bCompany);
+    alert(coEffNum);
+    coefficeint(aCompany,bCompany);
+
+
+
+}
+function getCo(astock,bstock){
+    var dataset;
+    //var ;
+    var co;
+    d3.csv("datatest.csv", function(data) {
+            dataset=data
+           });
+    for(i=0;i<dataset.length;i++){
+        if(dataset[i][0]==astock)
+            for(j=0;j<dataset[i].length;j++){
+                if(dataset[i][0]==bstock);
+                   co=dataset[i][j];
+            }
+    }
+    return co;
+}
+onClickCo();
+
