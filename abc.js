@@ -1002,6 +1002,7 @@ function getCo(astock,bstock){
     //var ;
     var co;
     d3.csv("https://seanlee128.github.io/stock-filter/test.csv", function(data) {
+            console.data;
             dataset=data
            });
     for(i=0;i<dataset.length;i++){
