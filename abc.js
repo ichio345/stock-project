@@ -113,6 +113,7 @@ function sentID(id){
     }
 };
     function clear(){
+        alert("hi")
     document.getElementById("form1").reset();
     document.getElementById("form2").reset();
     document.getElementById("form3").reset();
