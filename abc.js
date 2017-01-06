@@ -113,14 +113,18 @@ function sentID(id){
     }
 };
     function clear(){
-        alert("hi")
     document.getElementById("form1").reset();
     document.getElementById("form2").reset();
     document.getElementById("form3").reset();
     document.getElementById("form4").reset();
     var ddd =  document.getElementById("resultHere");
     ddd.removeChild(document.getElementById("mytable2"))
-}
+    var fff =document.createElement("div")
+    fff.setAttribute("id", "mytable2");
+    fff.setAttribute("class", "col-md-12 col-xs-12 ");
+    ddd.appendChild(fff)
+
+};
 
 function search(){
     testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.text1.value!=""}
