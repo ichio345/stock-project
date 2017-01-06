@@ -11,7 +11,7 @@
     var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:f2.checkValidity()}
     var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:f3.checkValidity()}
     var testrequest4 = {target:f4.target4.value, comparison:f4.comparison4.value , data:f4.text4.value, searchable:f4.checkValidity()}
-
+    document.getElementById("form1").target1.option
     
      var result1 = []
      var result2 = []
@@ -30,7 +30,67 @@
             var res = "每股盈餘"
             return res
         }
-        
+        else if(dsp=="NATPM"){
+            var res = "稅後淨利率"
+            return res
+        }
+         else if(dsp=="ROE"){
+            var res = "股東權益報酬率"
+            return res
+        }
+         else if(dsp=="IT"){
+            var res = "存貨週轉率"
+            return res
+        }       
+         else if(dsp=="DY"){
+            var res = "殖利率"
+            return res
+        }        
+         else if(dsp=="NVPS"){
+            var res = "淨值"
+            return res
+        }     
+         else if(dsp=="OP"){
+            var res = "營業毛利率"
+            return res
+        }     
+         else if(dsp=="OPMGR"){
+            var res = "營收成長率"
+            return res
+        }        
+         else if(dsp=="OPM"){
+            var res = "營業利益率"
+            return res
+        } 
+         else if(dsp=="LR"){
+            var res = "流動比率"
+            return res
+        }                
+         else if(dsp=="NIGR"){
+            var res = "稅後淨利成長率"
+            return res
+        }             
+         else if(dsp=="DR"){
+            var res = "負債比率"
+            return res
+        }        
+         else if(dsp=="ATNI"){
+            var res = "稅後淨利"
+            return res
+        }        
+         else if(dsp=="PS"){
+            var res = "每股營業額"
+            return res
+        }        
+         else if(dsp=="PE"){
+            var res = "本益比"
+            return res
+        }
+         else if(dsp=="PBR"){
+            var res = "股價淨值比"
+            return res
+        }        
+
     }
     // var getData = d3.csv(dataPath+"name"+csv, function g(gd){
     //     console.log(gd);
