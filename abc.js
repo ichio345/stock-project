@@ -25,11 +25,24 @@
         return dataURL
     }
 
+    // var getData = d3.csv(dataPath+"name"+csv, function g(gd){
+    //     console.log(gd);
+    // })
 
-    function sentID(id){
-        alert(id);
-        return id 
+function sentID(id){ 
+    if (testrequest.searchable==true){
+        singlestock(id);
     }
+    if (testrequest2.searchable==true){
+        singlestock2(id);
+    }
+    if (testrequest3.searchable==true){
+        singlestock3(id);
+    }
+    if (testrequest4.searchable==true){
+        singlestock4(id);
+    }
+};
     function clear(){
     document.getElementById("form1").reset();
     document.getElementById("form2").reset();
