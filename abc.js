@@ -992,7 +992,7 @@ function onClickCo(){
     //getElementById("form5").company2;
     var coEffNum=getCo(aCompany,bCompany);
     alert(coEffNum);
-    coefficeint(aCompany,bCompany);
+   // coefficeint(aCompany,bCompany);
 
 
 
@@ -1001,7 +1001,7 @@ function getCo(astock,bstock){
     var dataset;
     //var ;
     var co;
-    d3.csv("datatest.csv", function(data) {
+    d3.csv("https://seanlee128.github.io/stock-filter/test.csv", function(data) {
             dataset=data
            });
     for(i=0;i<dataset.length;i++){
