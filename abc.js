@@ -456,8 +456,9 @@ for (i=0; i< result1.length ; i++){
                     for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
+                     var divId = "s"+y["id"]
                      var bigDiv = document.createElement("div")
-                     bigDiv.setAttribute("id", y["id"]);
+                     bigDiv.setAttribute("id", divId);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                      bigDiv.style.width = "100%"
@@ -639,8 +640,9 @@ else{
             for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
+                     var divId = "s"+y["id"]
                      var bigDiv = document.createElement("div")
-                     bigDiv.setAttribute("id", y["id"]);
+                     bigDiv.setAttribute("id", divId);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                      bigDiv.style.width = "100%"
@@ -791,8 +793,9 @@ else{
                    for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
+                     var divId = "s"+y["id"]
                      var bigDiv = document.createElement("div")
-                     bigDiv.setAttribute("id", y["id"]);
+                     bigDiv.setAttribute("id", divId);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                      bigDiv.style.width = "100%"
@@ -913,9 +916,9 @@ else{
                    for(m=0;m<outcome.length;m++){
                      // alert("hi");
                      var y = outcome[m]
+                     var divId = "s"+y["id"]
                      var bigDiv = document.createElement("div")
-                     bigDiv.setAttribute("id", y["id"]);
-                     bigDiv.setAttribute("onclick", "sentID(y[\"id\"])")
+                     bigDiv.setAttribute("id", divId);
                      var containerDiv = document.getElementById("mytable2")
                      containerDiv.appendChild(bigDiv)
                      bigDiv.style.width = "100%"
