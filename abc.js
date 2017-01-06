@@ -26,18 +26,11 @@
         return dataURL
     }
     function display(dsp){
-
-        d3.csv(namePath, function g(gd){
-            console.log(gd)
-            for(i=0;i<gd.length;i++){
-                var dr = gd[i]
-                if(dsp == dr["english"]){
-                    var final = dr["chinese"]
-                    return final
-                }
-
-            }
-        })
+        if(dsp=="EPS"){
+            var res = "每股盈餘"
+            return res
+        }
+        
     }
     // var getData = d3.csv(dataPath+"name"+csv, function g(gd){
     //     console.log(gd);
