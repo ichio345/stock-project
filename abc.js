@@ -6,6 +6,7 @@
     var f2 = document.getElementById("form2")
     var f3 = document.getElementById("form3")
     var f4 = document.getElementById("form4")
+    var namePath = dataPath+"name"+csv
     var testrequest = {target:f1.target1.value, comparison:f1.comparison1.value , data:f1.text1.value, searchable:f1.checkValidity()}
     var testrequest2 = {target:f2.target2.value, comparison:f2.comparison2.value , data:f2.text2.value, searchable:f2.checkValidity()}
     var testrequest3 = {target:f3.target3.value, comparison:f3.comparison3.value , data:f3.text3.value, searchable:f3.checkValidity()}
@@ -24,7 +25,20 @@
         var dataURL = dataPath+filename+csv;
         return dataURL
     }
+    function display(dsp){
 
+        d3.csv(namePath, function g(gd){
+            console.log(gd)
+            for(i=0;i<gd.length;i++){
+                var dr = gd[i]
+                if(dsp == dr["english"]){
+                    var final = dr["chinese"]
+                    return final
+                }
+
+            }
+        })
+    }
     // var getData = d3.csv(dataPath+"name"+csv, function g(gd){
     //     console.log(gd);
     // })
@@ -826,7 +840,7 @@ else{
                      dataValue.style.width = "33%"
 
                      var dataValue2 = document.createElement("div")
-                     dataValue2.innerHTML = testrequest["target"]
+                     dataValue2.innerHTML = display(testrequest["target"])
                      dataValue2.style.textAlign = "center"
                      dataValue2.style.display = "inline-block"
                      dataValue2.style.backgroundColor = "skyblue"
