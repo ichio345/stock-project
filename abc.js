@@ -112,7 +112,6 @@ function sentID(id){
         singlestock4(ic);
     }
 };
-document.getElementById("clear").onclick = clear()
     function clear2(){
     document.getElementById("form1").reset();
     document.getElementById("form2").reset();
