@@ -98,7 +98,6 @@
 
 function sentID(id){ 
     var ic = "s"+id
-    alert(ic)
     if (testrequest.searchable==true){
         singlestock(ic);
     }
