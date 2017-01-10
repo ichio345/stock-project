@@ -27,59 +27,59 @@
     }
     function display(dsp){
         if(dsp=="EPS"){
-            var res = "每股盈餘"
+            var res = "每股盈餘(元)"
             return res
         }
         else if(dsp=="NATPM"){
-            var res = "稅後淨利率"
+            var res = "稅後淨利率(%)"
             return res
         }
          else if(dsp=="ROE"){
-            var res = "股東權益報酬率"
+            var res = "股東權益報酬率(%)"
             return res
         }
          else if(dsp=="IT"){
-            var res = "存貨週轉率"
+            var res = "存貨週轉率(%)"
             return res
         }       
          else if(dsp=="DY"){
-            var res = "殖利率"
+            var res = "殖利率(%)"
             return res
         }        
          else if(dsp=="NVPS"){
-            var res = "淨值"
+            var res = "淨值(元)"
             return res
         }     
          else if(dsp=="OP"){
-            var res = "營業毛利率"
+            var res = "營業毛利率(%)"
             return res
         }     
          else if(dsp=="OPMGR"){
-            var res = "營收成長率"
+            var res = "營收成長率(%)"
             return res
         }        
          else if(dsp=="OPM"){
-            var res = "營業利益率"
+            var res = "營業利益率(%)"
             return res
         } 
          else if(dsp=="LR"){
-            var res = "流動比率"
+            var res = "流動比率(%)"
             return res
         }                
          else if(dsp=="NIGR"){
-            var res = "稅後淨利成長率"
+            var res = "稅後淨利成長率(%)"
             return res
         }             
          else if(dsp=="DR"){
-            var res = "負債比率"
+            var res = "負債比率(%)"
             return res
         }        
          else if(dsp=="ATNI"){
-            var res = "稅後淨利"
+            var res = "稅後淨利(千元)"
             return res
         }        
          else if(dsp=="PS"){
-            var res = "每股營業額"
+            var res = "每股營業額(元)"
             return res
         }        
          else if(dsp=="PE"){
